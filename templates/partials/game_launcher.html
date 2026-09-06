@@ -1,0 +1,186 @@
+<section id="screenLauncher" class="launcher hide" aria-labelledby="launcherTitle">
+  <header class="launcher-header">
+    <div class="launcher-brand">
+      <img src="{{ url_for('static', filename='img/ui/festival-brand.png') }}" alt="AI Fest Chevron Venezuela">
+    </div>
+    <div class="launcher-heading">
+      <span class="launcher-kicker">AI FEST EXPERIENCE</span>
+      <h1 id="launcherTitle">Centro de Experiencias<br>IA y Ciberseguridad</h1>
+      <p>Selecciona una misión, supera el desafío y demuestra tus habilidades.</p>
+    </div>
+    <div class="launcher-header-tools">
+      <span class="launcher-session-clock" aria-label="Tiempo restante de sesión">
+        <small id="launcherSessionName">Visitante</small><b id="launcherSessionTimer">10:00</b>
+      </span>
+      <button class="launcher-profile-button" id="btnOpenProfile" aria-label="Abrir perfil y progreso">
+        <span class="profile-avatar" aria-hidden="true">V</span>
+        <span class="profile-copy"><small id="launcherProfileRole">JUGADOR</small><b id="launcherProfileName">Visitante</b><em id="launcherProfileLevel">Visitante</em></span>
+      </button>
+      <button class="launcher-home launcher-ranking-button" id="btnOpenVisitorRanking" aria-label="Ver ranking de visitantes">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 21V10h4v11M3 21v-6h4v6M13 21V4h4v17M2 21h20"/></svg>
+        <span>Ranking</span>
+      </button>
+      <button class="launcher-home launcher-logout" id="btnLauncherLogout" aria-label="Cerrar sesión de visitante">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M10 5H5v14h5M14 8l4 4-4 4M18 12H9"/></svg>
+        <span>Cambiar jugador</span>
+      </button>
+      <a class="launcher-home launcher-admin-link hide" id="btnAdminPanel" href="{{ url_for('admin.pairs_list') }}" aria-label="Abrir panel administrativo">
+        <span>Administrar</span>
+      </a>
+      <button class="launcher-home" id="btnLauncherHome" aria-label="Volver a la portada">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10M9 20v-6h6v6"/></svg>
+        <span>Inicio</span>
+      </button>
+    </div>
+  </header>
+  <p class="profile-photo-notice" id="profilePhotoNotice" role="status" aria-live="polite" hidden></p>
+
+  <div class="launcher-layout">
+    <div class="hero-hud launcher-stats" aria-label="Estadísticas de la partida">
+      <div class="hero-hud-item">
+        <span class="hero-hud-icon hero-hud-icon-score" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"/></svg>
+        </span>
+        <span class="hero-stat-copy">
+          <span class="hero-hud-value" data-stat="score">0</span>
+          <span class="hero-hud-label">PUNTOS</span>
+        </span>
+      </div>
+      <span class="hero-hud-divider"></span>
+      <div class="hero-hud-item">
+        <span class="hero-hud-icon hero-hud-icon-streak" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M13.5 2.5c.5 3-1.2 4.3-2.7 6.1-1.4 1.7-1.1 3.4.2 4.4-.1-2.1 1.2-3.4 2.5-4.6.2 2.2 2.4 3.5 2.4 6.2a4 4 0 0 1-7.9.8c-1.1 1-1.8 2.4-1.8 4A5.8 5.8 0 0 0 12 25a6.4 6.4 0 0 0 6.4-6.5c0-5.6-4-7.4-4.9-16Z"/></svg>
+        </span>
+        <span class="hero-stat-copy">
+          <span class="hero-hud-value" data-stat="streak">0</span>
+          <span class="hero-hud-label">RACHA</span>
+        </span>
+      </div>
+      <span class="hero-hud-divider"></span>
+      <div class="hero-hud-item">
+        <span class="hero-hud-icon hero-hud-icon-round" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0-9-9 9 9 0 0 0 9 9Z"/><path d="M12 17a5 5 0 1 0-5-5 5 5 0 0 0 5 5Z"/><path d="M12 13.5a1.5 1.5 0 1 0-1.5-1.5 1.5 1.5 0 0 0 1.5 1.5Z"/></svg>
+        </span>
+        <span class="hero-stat-copy">
+          <span class="hero-hud-value" data-stat="round">0/0</span>
+          <span class="hero-hud-label">RONDA</span>
+        </span>
+      </div>
+    </div>
+    <div class="launcher-section-heading">
+      <div><span class="launcher-kicker">EXPERIENCIAS ACTIVAS</span><h2>Elige tu próximo desafío</h2></div>
+      <span class="launcher-counter">01 MISIONES</span>
+    </div>
+
+    <div class="game-app-grid" role="list" aria-label="Catálogo de juegos disponibles">
+      {% for game in game_catalog %}
+      {% if game.status == "available" %}
+      <button
+        class="game-app game-app-{{ game.accent }}"
+        data-game-id="{{ game.id }}"
+        data-status="{{ game.status }}"
+        type="button"
+        role="listitem"
+        aria-pressed="false">
+        <span class="game-app-art game-art-{{ game.id }}" aria-hidden="true">
+          {% if game.id == "human-vs-ai" %}
+          <img class="art-human art-human-real" src="{{ url_for('static', filename='img/ui/digital-woman.png') }}" alt="">
+          <img class="art-human art-human-ai" src="{{ url_for('static', filename='img/ui/digital-man.png') }}" alt="">
+          <span class="art-divider"></span>
+          {% endif %}
+          <span class="art-scanlines"></span>
+        </span>
+        <span class="game-app-info">
+          <span class="game-app-status"><i></i> DISPONIBLE</span>
+          <span class="game-app-copy">
+            <strong>{{ game.title }}</strong>
+            <small>{{ game.category }} · {{ game.duration }}</small>
+          </span>
+          <span class="game-app-arrow" aria-hidden="true">↗</span>
+        </span>
+      </button>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="launcher-play-row">
+      <button class="btn launcher-play" id="btnLaunchSelected">
+        <span id="gamePreviewAction">Jugar Human vs AI</span><b aria-hidden="true">→</b>
+      </button>
+    </div>
+
+    <details class="upcoming-experiences">
+      <summary><span><b>Más experiencias</b><small>Próximamente en AI Fest</small></span><span aria-hidden="true">＋</span></summary>
+      <div class="upcoming-grid" aria-label="Próximas experiencias">
+        {% for game in game_catalog %}
+        {% if game.status != "available" %}
+        <article class="upcoming-card game-app-{{ game.accent }}">
+          <span aria-hidden="true">{{ game.icon }}</span>
+          <div><strong>{{ game.title }}</strong><small>{{ game.category }} · PRÓXIMAMENTE</small></div>
+        </article>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </details>
+  </div>
+
+  <script type="application/json" id="gameCatalogData">{{ game_catalog|tojson }}</script>
+  <div class="launcher-modal hide" id="profileModal" role="dialog" aria-modal="true" aria-labelledby="profileTitle">
+    <div class="launcher-modal-card">
+      <button class="launcher-modal-close" id="btnCloseProfile" aria-label="Cerrar perfil">✕</button>
+      <h2 id="profileTitle">Perfil local</h2>
+      <div class="profile-photo-block">
+        <span class="profile-photo-frame">
+          <img id="profilePhotoImage" alt="Fotografía de perfil" hidden>
+          <span id="profilePhotoFallback" aria-hidden="true">V</span>
+        </span>
+        <button class="btn ghost small" id="btnOpenProfilePhoto" type="button">📸 Tomarse Foto</button>
+      </div>
+      <label>Nombre del visitante
+        <span class="profile-name-row"><input id="profileName" maxlength="30" readonly></span>
+        <small class="profile-name-locked">El nombre queda reservado durante el registro y no puede reutilizarse.</small>
+      </label>
+      <div class="profile-stats">
+        <span><b id="profilePoints">0</b>Puntos</span>
+        <span><b id="profileMissions">0</b>Misiones</span>
+        <span><b id="profileTime">0 min</b>Tiempo</span>
+        <span><b id="profileLevel">Visitante</b>Nivel</span>
+      </div>
+      <h3>Logros</h3><div class="profile-achievements" id="profileAchievements"></div>
+      <h3>Ranking local</h3><ol class="profile-ranking" id="profileRanking"></ol>
+      <h3>Historial reciente</h3><div class="profile-history" id="profileHistory"></div>
+    </div>
+  </div>
+  <div class="launcher-modal hide" id="visitorRankingModal" role="dialog" aria-modal="true" aria-labelledby="visitorRankingTitle">
+    <div class="launcher-modal-card visitor-ranking-card">
+      <button class="launcher-modal-close" id="btnCloseVisitorRanking" aria-label="Cerrar ranking">✕</button>
+      <header class="visitor-ranking-brand">
+        <strong>HUMAN VS AI</strong>
+        <img src="{{ url_for('static', filename='img/ui/festival-brand-transparent.png') }}" alt="AI Fest Chevron Venezuela">
+        <span><b>05</b><small>ENTRETENIMIENTO</small></span>
+      </header>
+      <div class="visitor-ranking-heading">
+        <h2 id="visitorRankingTitle">RANKING</h2>
+        <p>EN TIEMPO REAL</p>
+      </div>
+      <div class="visitor-ranking-table-wrap">
+        <table class="visitor-ranking-table">
+          <thead><tr><th>POS.</th><th>NOMBRE</th><th>PUNTOS</th></tr></thead>
+          <tbody id="visitorRankingList" aria-live="polite">
+            <tr><td class="visitor-ranking-empty" colspan="3">Cargando ranking…</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <footer class="visitor-ranking-footer">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+        <span>PARTICIPANTES ACTIVOS: <b id="visitorRankingActiveCount">0</b></span>
+      </footer>
+      <div class="visitor-ranking-admin-actions hide" id="visitorRankingAdminActions">
+        <button type="button" class="visitor-ranking-clear" id="btnClearVisitorRanking">Borrar historial y ranking</button>
+        <p id="visitorRankingAdminStatus" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+</section>

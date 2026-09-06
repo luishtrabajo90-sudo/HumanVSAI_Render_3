@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "it-help",
+      "question": "¿Qué debe hacer usted cuando necesita ayuda de IT?",
+      "options": [
+        {"id": "a", "label": "Llamar a Taide"},
+        {"id": "b", "label": "Enviar un email a Taide"},
+        {"id": "c", "label": "Chatear a Taide"},
+        {"id": "d", "label": "Abrir un ticket"}
+      ],
+      "correct": "d",
+      "explanation": "Abrir un ticket permite registrar, priorizar y dar seguimiento formal a la solicitud de IT."
+    },
+    {
+      "id": "chevron-agent",
+      "question": "¿Cuál agente es utilizado en el ambiente Chevron?",
+      "options": [
+        {"id": "a", "label": "Claude"},
+        {"id": "b", "label": "Gemini"},
+        {"id": "c", "label": "Analyst"},
+        {"id": "d", "label": "Agente 007"}
+      ],
+      "correct": "c",
+      "explanation": "Analyst es el agente utilizado en el ambiente Chevron."
+    },
+    {
+      "id": "unused-agent",
+      "question": "¿Cuál agente no es utilizado en el ambiente Chevron?",
+      "options": [
+        {"id": "a", "label": "Excel"},
+        {"id": "b", "label": "Claude"},
+        {"id": "c", "label": "Research"},
+        {"id": "d", "label": "Planner Agent"}
+      ],
+      "correct": "b",
+      "explanation": "Claude no forma parte de los agentes utilizados en el ambiente Chevron indicado para este desafío."
+    },
+    {
+      "id": "kilby-location",
+      "question": "¿Dónde será desarrollado el proyecto Kilby?",
+      "options": [
+        {"id": "a", "label": "West Virginia"},
+        {"id": "b", "label": "West Texas"},
+        {"id": "c", "label": "Wild Wild West"},
+        {"id": "d", "label": "West Palm Beach"}
+      ],
+      "correct": "b",
+      "explanation": "El proyecto Kilby será desarrollado en West Texas."
+    },
+    {
+      "id": "apex-launch",
+      "question": "¿Cuándo fue lanzada la plataforma generativa APEX?",
+      "options": [
+        {"id": "a", "label": "Agosto de 2014"},
+        {"id": "b", "label": "Agosto de 2024"},
+        {"id": "c", "label": "Agosto de 2025"},
+        {"id": "d", "label": "Agosto de 2015"}
+      ],
+      "correct": "b",
+      "explanation": "La plataforma generativa APEX fue lanzada en agosto de 2024."
+    }
+  ]
+}

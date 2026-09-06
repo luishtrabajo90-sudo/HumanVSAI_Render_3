@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Jugadores en linea | AI Fest{% endblock %}
+{% block body_class %}projection-page{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/projection.css', v='1') }}">
+{% endblock %}
+{% block content %}
+<main class="projection" data-projection-number="{{ projection_number }}">
+  <section class="player-grid" id="playerGrid" aria-live="polite"></section>
+</main>
+{% endblock %}
+{% block scripts %}
+<script defer src="{{ url_for('static', filename='js/projection.js', v='2') }}"></script>
+{% endblock %}

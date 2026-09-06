@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Admin — Configuración{% endblock %}
+{% block content %}
+<div class="wrap">
+  <div class="brand">
+    <div class="logo"><span class="dot"></span> Configuración del juego</div>
+    <div class="hud">
+      <span class="admin-identity">{{ admin_user.full_name }}</span>
+      <a class="btn ghost small" href="{{ url_for('admin.pairs_list') }}">◀ Volver al listado</a>
+      <form method="post" action="{{ url_for('admin.logout') }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <button class="btn ghost small" type="submit">Cerrar sesión</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="panel admin-panel">
+    <form class="admin-form" method="post">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <label>Tiempo límite por ronda (segundos)
+        <input type="number" name="timer_seconds" min="3" max="120" value="{{ settings.timer_seconds }}" required>
+      </label>
+
+      <label class="admin-check">
+        <input type="checkbox" name="sound_effects_enabled" {% if settings.sound_effects_enabled %}checked{% endif %}>
+        Efectos de sonido activados
+      </label>
+
+      <label class="admin-check">
+        <input type="checkbox" name="visual_effects_enabled" {% if settings.visual_effects_enabled %}checked{% endif %}>
+        Efectos visuales activados (animaciones de acierto/fallo)
+      </label>
+
+      <div class="cta-row admin-cta">
+        <button class="btn" type="submit">Guardar</button>
+      </div>
+    </form>
+    <p class="note">Los sonidos se buscan en <code>static/sounds/correct.mp3</code>, <code>wrong.mp3</code>, <code>timeout.mp3</code> y <code>click.mp3</code>. Si no existen, el juego simplemente no reproduce audio.</p>
+  </div>
+</div>
+{% endblock %}

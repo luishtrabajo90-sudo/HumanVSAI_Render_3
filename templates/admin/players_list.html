@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Admin — Jugadores{% endblock %}
+{% block content %}
+<main class="wrap">
+  <div class="brand">
+    <div class="logo"><span class="dot"></span> Admin · Jugadores</div>
+    <div class="hud">
+      <span class="admin-identity">{{ admin_user.full_name }}</span>
+      <a class="btn ghost small" href="{{ url_for('admin.pairs_list') }}">Pares</a>
+      <a class="btn small" href="{{ url_for('admin.player_new') }}">+ Nuevo jugador</a>
+      <form method="post" action="{{ url_for('admin.logout') }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <button class="btn ghost small" type="submit">Cerrar sesión</button>
+      </form>
+    </div>
+  </div>
+  <section class="panel admin-table-wrap admin-panel">
+    <p class="admin-help">Los invitados caducan 24 horas después de su alta. Eliminar borra también su sesión e historial para permitir registrar nuevamente el mismo nombre.</p>
+    <table class="admin-table admin-table-wide">
+      <thead><tr><th>Nombre</th><th>Alta</th><th>Última actividad</th><th>Expira</th><th>Estado</th><th>Puntos</th><th>Misiones</th><th>Acciones</th></tr></thead>
+      <tbody>
+      {% for player in players %}
+        {% set visitor = visitors.get(player.id) %}
+        <tr>
+          <td data-label="Nombre">{{ player.name }}</td>
+          <td data-label="Alta">{{ player.created_at.strftime('%Y-%m-%d %H:%M UTC') if player.created_at else '—' }}</td>
+          <td data-label="Última actividad">{{ player.last_activity_at.strftime('%Y-%m-%d %H:%M UTC') if player.last_activity_at else '—' }}</td>
+          <td data-label="Expira">{{ player.expires_at.strftime('%Y-%m-%d %H:%M UTC') if player.expires_at else '—' }}</td>
+          <td data-label="Estado">
+            {% if visitor and not visitor.ended_at and visitor.expires_at > now %}
+              <span class="badge-pill on">Activo</span>
+            {% elif visitor %}
+              <span class="badge-pill off">Finalizado</span>
+            {% else %}
+              <span class="badge-pill off">Registrado</span>
+            {% endif %}
+          </td>
+          <td data-label="Puntos">{{ player.total_points }}</td>
+          <td data-label="Misiones">{{ player.mission_count }}</td>
+          <td class="admin-actions" data-label="Acciones">
+            <a class="btn ghost small" href="{{ url_for('admin.player_edit', player_id=player.id) }}">Editar</a>
+            <form method="post" action="{{ url_for('admin.player_delete', player_id=player.id) }}"
+                  onsubmit="return confirm('¿Eliminar este jugador y todo su historial?');">
+              <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+              <button class="btn danger small" type="submit">Eliminar</button>
+            </form>
+          </td>
+        </tr>
+      {% else %}
+        <tr><td colspan="8" class="admin-empty">No hay jugadores registrados.</td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </section>
+</main>
+{% endblock %}

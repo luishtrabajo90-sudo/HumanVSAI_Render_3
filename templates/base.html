@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<title>{% block title %}¿Real o IA?{% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css', v='admin-blue-1') }}">
+<script defer src="{{ url_for('static', filename='js/responsive.js') }}"></script>
+{% block head %}{% endblock %}
+</head>
+<body class="{% block body_class %}{% if request.blueprint == 'admin' %}admin-page{% endif %}{% endblock %}">
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <div class="wrap flash-wrap">
+      {% for category, message in messages %}
+        <div class="flash {{ category }}">{{ message }}</div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
+{% block content %}{% endblock %}
+<button class="app-fullscreen" id="appFullscreen" type="button" aria-label="Activar pantalla completa" aria-pressed="false" title="Pantalla completa">⛶</button>
+{% block scripts %}{% endblock %}
+</body>
+</html>

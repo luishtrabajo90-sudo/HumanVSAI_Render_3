@@ -1,0 +1,336 @@
+{% extends "base.html" %}
+{% block title %}¿Real o IA? — El reto de detectar imágenes{% endblock %}
+{% block body_class %}game-page{% if mobile_controller %} mobile-controller{% endif %}{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/launcher.css', v='ranking-fullscreen-3') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/projection.css', v='2') }}">
+{% endblock %}
+{% block content %}
+<div class="wrap start-mode" id="appWrap">
+
+  <header class="brand">
+    <div class="brand-actions">
+      <span class="game-session-clock hide" id="gameSessionClock" aria-label="Tiempo restante de sesión">
+        <small id="gameSessionName">Visitante</small>
+        <b id="gameSessionTimer">10:00</b>
+      </span>
+      <button class="btn game-nav game-chrome hide" id="btnLearnTop">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5.5A3.5 3.5 0 0 1 7.5 2H11v18H7.5A3.5 3.5 0 0 0 4 23V5.5ZM20 5.5A3.5 3.5 0 0 0 16.5 2H13v18h3.5A3.5 3.5 0 0 1 20 23V5.5Z"/></svg>
+        Aprende
+      </button>
+      <button class="btn btn-exit" id="btnExit" aria-label="Volver al selector de experiencias">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M10 5H5v14h5M14 8l4 4-4 4M18 12H9"/></svg>
+        Salir
+      </button>
+    </div>
+    <div class="logo">
+      <img class="logo-img" src="{{ url_for('static', filename='img/ui/festival-brand.png') }}" alt="AI Fest Chevron Venezuela">
+      <div class="logo-titles">
+        <span class="logo-title">¿REAL O IA?</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="progress game-chrome hide"><i id="bar"></i></div>
+
+  <!-- START -->
+  <section id="screenStart" class="panel hero hero-corp">
+    <img class="festival-brand" src="{{ url_for('static', filename='img/ui/festival-brand.png') }}" alt="AI Fest Chevron Venezuela">
+    <div class="hero-accent hero-accent-left" aria-hidden="true"></div>
+    <div class="hero-accent hero-accent-right" aria-hidden="true"></div>
+    <div class="hero-intro">
+      <h1><span aria-hidden="true">»»</span> AI FEST CHEVRON VENEZUELA <span aria-hidden="true">««</span></h1>
+      <p>Aprende a distinguir imágenes reales de imágenes generadas por Inteligencia Artificial.</p>
+    </div>
+    <div class="challenge-card">
+      <h2>¿Real o <span>IA</span>?</h2>
+      <p>¿Puedes distinguir imágenes reales de las creadas por Inteligencia Artificial?</p>
+      <div class="cta-row">
+        <button class="btn btn-big btn-cta" id="btnStart">
+          <svg aria-hidden="true" viewBox="0 0 32 32"><path d="M18.6 3.4c4.4-2 8.8-1.4 10-1.1.3 1.2.9 5.6-1.1 10-1.7 3.8-5.1 6.7-8.4 8.7l-8.2-8.2c2-3.3 4.9-6.7 8.7-8.4Zm4.9 7.1a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM9.7 14l-5 .6-3.1 3.1 6.3 1.2M18 22.3l-.6 5-3.1 3.1-1.2-6.3M9.5 22.5c-2.7.1-4.4 1.7-5.1 5.1 3.4-.7 5-2.4 5.1-5.1Z"/></svg>
+          COMENZAR DESAFÍO
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="howto-section" id="howToSection">
+    <h3 class="howto-heading">
+      <span aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M9 12h14a7 7 0 0 1 6.7 9l-1.1 3.6a3.5 3.5 0 0 1-5.8 1.5L20 23H12l-2.8 3.1a3.5 3.5 0 0 1-5.8-1.5L2.3 21A7 7 0 0 1 9 12Z"/><path d="M9 16v6m-3-3h6m11-1h.1m3 3h.1"/></svg></span>
+      ¿Cómo jugar?
+    </h3>
+    <div class="how">
+      <div class="step">
+        <span class="step-icon-box"><svg aria-hidden="true" viewBox="0 0 48 40"><path d="M3 20s7-11 21-11 21 11 21 11-7 11-21 11S3 20 3 20Z"/><circle cx="24" cy="20" r="6"/></svg></span>
+        <p>Observa la imagen.</p>
+      </div>
+      <div class="step">
+        <span class="step-icon-box"><svg aria-hidden="true" viewBox="0 0 48 40"><rect x="3" y="6" width="16" height="27" rx="2"/><rect x="29" y="6" width="16" height="27" rx="2"/><path d="m9 20 3 3 5-7M33 16l8 8m0-8-8 8"/></svg></span>
+        <p>Decide si es REAL o IA.</p>
+      </div>
+      <div class="step">
+        <span class="step-icon-box"><svg aria-hidden="true" viewBox="0 0 48 40"><path d="M8 35V17h7v18H8Zm13 0V10h7v25h-7Zm13 0V4h7v31h-7Z"/><path d="m5 11 8-6 9 4 14-7"/></svg></span>
+        <p>Gana puntos por cada respuesta correcta.</p>
+      </div>
+      <div class="step">
+        <span class="step-icon-box"><svg aria-hidden="true" viewBox="0 0 48 40"><path d="M14 4h20v8c0 7-4 12-10 12S14 19 14 12V4Z"/><path d="M14 8H6v3c0 6 4 9 10 9M34 8h8v3c0 6-4 9-10 9M24 24v7m-8 5h16m-12-5h8"/></svg></span>
+        <p>Completa todas las rondas.</p>
+      </div>
+      <div class="step">
+        <span class="step-icon-box"><svg aria-hidden="true" viewBox="0 0 48 40"><path d="M6 34h36M10 29l9-10 8 6L40 8"/><path d="M31 8h9v9"/></svg></span>
+        <p>Obtén el mejor puntaje posible.</p>
+      </div>
+    </div>
+  </div>
+
+  {% include "partials/game_launcher.html" %}
+
+  <!-- LOADING -->
+  <section id="screenLoading" class="panel hero hide">
+    <h1>Preparando el reto…</h1>
+    <p id="loadMsg">Cargando imágenes…</p>
+  </section>
+
+  <!-- GAME -->
+  <section id="screenGame" class="hide">
+    <div class="round-status-row">
+      <div class="game-hud">
+        <div class="game-hud-item">
+          <span class="hud-symbol hud-star" aria-hidden="true">☆</span>
+          <span class="hud-copy"><span data-stat="score">0</span><small>Puntos</small></span>
+        </div>
+        <div class="game-hud-item streak">
+          <span class="hud-symbol" aria-hidden="true">🔥</span>
+          <span class="hud-copy"><span data-stat="streak">0</span><small>Racha</small></span>
+        </div>
+        <div class="game-hud-item">
+          <span class="hud-symbol hud-target" aria-hidden="true">◎</span>
+          <span class="hud-copy"><span data-stat="round">0/0</span><small>Ronda</small></span>
+        </div>
+      </div>
+      <div class="timer-ring" id="timerRing" aria-label="Tiempo restante">
+        <small class="timer-label">Tiempo</small>
+        <span class="timer-ring-value" id="vTimerBig">--</span>
+      </div>
+    </div>
+    <div class="qbar">
+      <div>
+        <div class="qcat" id="qcat">Categoría</div>
+        <h2 class="qtitle" id="qtitle">¿Esta imagen es real o fue creada por IA?</h2>
+      </div>
+    </div>
+    <p class="detective-hint"><b>🔎 Modo detective IA:</b> <span id="detectiveHint"></span></p>
+    <div id="timeoutAlert" class="timeout-alert waiting">Selecciona IA o REAL</div>
+    <div class="cards" id="roundCards" aria-busy="true">
+      <div class="card single-image-card" id="card0" aria-label="Imagen para clasificar">
+        <img id="img0" alt="Imagen para clasificar como IA o real" decoding="async" draggable="false">
+      </div>
+    </div>
+    <div class="classification-actions" aria-label="Opciones para clasificar la imagen">
+      <button class="classification-choice" id="choiceAI" data-choice="ia">
+        <kbd>I</kbd> IA
+      </button>
+      <button class="classification-choice" id="choiceReal" data-choice="real">
+        <kbd>R</kbd> REAL
+      </button>
+    </div>
+    <div id="roundLoadError" class="round-load-error hide" role="alert">
+      <strong>No se pudieron preparar las imágenes.</strong>
+      <p id="roundLoadErrorMessage"></p>
+      <div class="row">
+        <button class="btn" id="btnRetryRound">Reintentar</button>
+        <button class="btn ghost" id="btnSkipRound">Omitir ronda</button>
+      </div>
+    </div>
+    <div id="feedback" class="feedback hide">
+      <h3 id="fbTitle"></h3>
+      <p class="feedback-summary"><b>Qué pasó</b><span id="fbSummary"></span></p>
+      <div class="row">
+        <button class="btn" id="btnNext">Siguiente ▶</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="screenResult" class="panel result hide">
+    <div class="result-ai-watermark" aria-hidden="true">
+      <svg viewBox="0 0 360 240" focusable="false">
+        <g class="ai-circuit-lines">
+          <path d="M80 56H38V28M80 96H18M80 144H18M80 184H38v28M280 56h42V28M280 96h62M280 144h62M280 184h42v28"/>
+          <circle cx="38" cy="28" r="6"/><circle cx="18" cy="96" r="6"/><circle cx="18" cy="144" r="6"/><circle cx="38" cy="212" r="6"/>
+          <circle cx="322" cy="28" r="6"/><circle cx="342" cy="96" r="6"/><circle cx="342" cy="144" r="6"/><circle cx="322" cy="212" r="6"/>
+        </g>
+        <rect class="ai-chip" x="80" y="32" width="200" height="176" rx="30"/>
+        <path class="ai-network" d="M125 82l33-18 44 20 34-16M125 82l20 48 57-46 25 57-47 35-35-46m57-46l34 57m-91-59l55 94"/>
+        <g class="ai-nodes">
+          <circle cx="125" cy="82" r="8"/><circle cx="158" cy="64" r="8"/><circle cx="202" cy="84" r="8"/>
+          <circle cx="236" cy="68" r="8"/><circle cx="145" cy="130" r="8"/><circle cx="227" cy="141" r="8"/><circle cx="180" cy="176" r="8"/>
+        </g>
+        <text x="180" y="132" text-anchor="middle">AI</text>
+      </svg>
+    </div>
+    <img id="resultProfilePhoto" class="result-profile-photo" alt="Fotografía del jugador" hidden>
+    <div class="scorebig" id="rScore">0</div>
+    <div class="rank" id="rRank">—</div>
+    <p id="rMsg" class="result-message"></p>
+    <div class="statgrid">
+      <div class="s"><b id="rAcc">0%</b><span>Aciertos</span></div>
+      <div class="s"><b id="rHits">0/0</b><span>Correctas</span></div>
+      <div class="s"><b id="rBest">0</b><span>Mejor racha</span></div>
+    </div>
+    <div class="cta-row">
+      <button class="btn ghost" id="btnRetryGame">Reintentar</button>
+      <button class="btn" id="btnNewGame">Nuevo juego</button>
+      <button class="btn ghost" id="btnViewRanking">Ver ranking</button>
+    </div>
+  </section>
+
+  <footer>Hecho para aprender a mirar mejor · Las imágenes de IA de este juego fueron generadas para fines educativos.</footer>
+  <aside id="exhibitionPanel" class="exhibition-panel hide" aria-live="polite">
+    <img id="exhibitionQr" alt="Código QR para abrir el juego">
+    <div>
+      <strong>Juega desde tu teléfono</strong>
+      <a id="exhibitionUrl" target="_blank" rel="noopener"></a>
+    </div>
+  </aside>
+</div>
+{% if mobile_controller %}
+<aside class="mobile-player-banner hide" id="mobilePlayerBanner"><span>Ubica tu imagen en la pantalla con tu número y selecciona la opción correcta.</span><i class="mobile-round-timer" id="mobileRoundTimer">--</i></aside>
+<aside class="mobile-player-identity hide" id="mobilePlayerIdentity"><strong id="mobilePlayerName"></strong><b id="mobilePlayerNumber"></b></aside>
+<button class="mobile-game-exit hide" id="btnMobileGameExit" type="button">Salir del juego</button>
+<section class="mobile-admin-choice hide" id="mobileAdminChoice" aria-labelledby="mobileAdminTitle">
+  <span>SESIÓN ADMINISTRATIVA</span><h2 id="mobileAdminTitle">Administrador: <b id="mobileAdminName"></b></h2>
+  <div><button class="btn" id="btnAdminPlay" type="button">Jugar sin límite</button><a class="btn ghost" id="btnAdminManage" href="{{ url_for('admin.pairs_list') }}">Administrar</a></div>
+</section>
+{% endif %}
+
+<div class="launcher-modal visitor-login-modal hide" id="visitorLoginModal" role="dialog" aria-modal="true" aria-labelledby="visitorLoginTitle">
+  <form class="launcher-modal-card visitor-login-card" id="visitorLoginForm" method="post" action="{{ url_for('visitor_session.api_start_visitor_session') }}">
+    <span class="visitor-login-kicker">SESIÓN TEMPORAL · 10 MINUTOS</span>
+    <h2 id="visitorLoginTitle">¿Cómo quieres aparecer en el juego?</h2>
+    <p>Ingresa tu nombre de usuario. Los visitantes participan sin contraseña.</p>
+    <div class="visitor-identity-fields">
+      <div class="visitor-photo-picker">
+        <span class="visitor-photo-preview">
+          <img id="visitorPhotoPreview" alt="Foto preparada para el perfil" hidden>
+          <span id="visitorPhotoFallback" aria-hidden="true">V</span>
+        </span>
+        <button class="visitor-photo-button" id="btnVisitorPhoto" type="button" aria-label="Tomarse foto" title="Tomarse foto">
+          <span aria-hidden="true">📸</span><span id="visitorPhotoAction">Tomarse foto</span>
+        </button>
+      </div>
+      <div class="visitor-credential-fields">
+        <label for="visitorNameInput">Nombre de usuario</label>
+        <input id="visitorNameInput" name="name" maxlength="30" autocomplete="username" required placeholder="Escribe tu nombre">
+        <div class="visitor-admin-password" id="visitorAdminPassword" hidden aria-hidden="true">
+          <label for="visitorPasswordInput">Contraseña</label>
+          <input id="visitorPasswordInput" name="password" type="password" autocomplete="current-password" disabled>
+        </div>
+      </div>
+    </div>
+    <input type="hidden" id="visitorLoginCsrf" name="csrf_token" value="{{ csrf_token() }}">
+    <script type="application/json" id="adminUsernameData">{{ admin_usernames|tojson }}</script>
+    <p class="visitor-photo-status" id="visitorPhotoStatus" role="status" aria-live="polite"></p>
+    <p class="visitor-login-error hide" id="visitorLoginError" role="alert"></p>
+    <div class="visitor-login-actions">
+      <button class="btn ghost" type="button" id="btnCancelVisitorLogin">Cancelar</button>
+      <button class="btn" type="submit" id="btnStartVisitorSession">Iniciar sesión</button>
+    </div>
+  </form>
+</div>
+
+<div class="launcher-modal hide" id="profilePhotoModal" role="dialog" aria-modal="true" aria-labelledby="profilePhotoTitle" aria-describedby="profilePhotoPrivacy">
+  <div class="launcher-modal-card profile-photo-modal-card">
+    <button class="launcher-modal-close" id="btnCloseProfilePhoto" type="button" aria-label="Cerrar cámara">✕</button>
+    <div id="profilePhotoConsent">
+      <span class="visitor-login-kicker">FOTO DE PERFIL · OPCIONAL</span>
+      <h2 id="profilePhotoTitle">¿Deseas tomarte una foto para personalizar tu perfil dentro del juego?</h2>
+      <p id="profilePhotoPrivacy">La foto es opcional y se elimina al vencer el registro de 24 horas del visitante.</p>
+      <div class="visitor-login-actions">
+        <button class="btn ghost" id="btnCancelProfilePhoto" type="button">No, cancelar</button>
+        <button class="btn" id="btnStartCamera" type="button">Sí, tomar foto</button>
+      </div>
+    </div>
+    <div id="profilePhotoCapture" hidden>
+      <video id="profilePhotoVideo" playsinline autoplay muted aria-label="Vista previa de cámara"></video>
+      <canvas id="profilePhotoCanvas" hidden></canvas>
+      <img id="profilePhotoPreview" alt="Vista previa de la fotografía capturada" hidden>
+      <p class="profile-photo-error" id="profilePhotoError" role="alert" aria-live="assertive"></p>
+      <div class="visitor-login-actions">
+        <button class="btn" id="btnCaptureProfilePhoto" type="button">📸 Capturar Foto</button>
+        <button class="btn ghost" id="btnRetakeProfilePhoto" type="button" hidden>Volver a Tomar Foto</button>
+        <button class="btn" id="btnSaveProfilePhoto" type="button" hidden>Guardar Foto</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="launcher-modal visitor-login-modal hide" id="sessionExpiredModal" role="alertdialog" aria-modal="true" aria-labelledby="sessionExpiredTitle">
+  <div class="launcher-modal-card session-expired-card">
+    <span class="session-expired-icon" aria-hidden="true">00:00</span>
+    <span class="visitor-login-kicker">SESIÓN FINALIZADA</span>
+    <h2 id="sessionExpiredTitle">Tu sesión ha expirado</h2>
+    <p id="sessionExpiredMessage">Han transcurrido los 10 minutos disponibles. Tus resultados quedaron guardados en el ranking.</p>
+    <button class="btn" type="button" id="btnAcknowledgeSessionExpired">Iniciar una nueva sesión</button>
+  </div>
+</div>
+
+<!-- LEARN MODAL -->
+<div id="overlay" class="overlay hide">
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Guía para diferenciar real e IA">
+    <div class="mhead">
+      <h2>🔎 Cómo diferenciar lo real de la IA</h2>
+      <button class="x" id="btnCloseLearn" aria-label="Cerrar">✕</button>
+    </div>
+    <div class="mbody">
+      <div class="tabs">
+        <div class="tab active" data-tab="img" id="tabImg">🖼️ Imágenes</div>
+        <div class="tab" data-tab="vid" id="tabVid">🎬 Videos</div>
+      </div>
+
+      <div id="tabImgBody">
+        <div class="tipgrid">
+          <div class="tipcard"><h4>✋ Manos y dedos</h4><p>El error nº1 de la IA. Cuenta los dedos, busca uñas deformes, articulaciones imposibles y manos que se funden con lo que sujetan.</p></div>
+          <div class="tipcard"><h4>👀 Ojos, dientes y orejas</h4><p>Reflejos distintos en cada ojo, pupilas asimétricas, dientes "fundidos" o demasiado perfectos y orejas con forma rara o aretes que no coinciden.</p></div>
+          <div class="tipcard"><h4>🔤 Texto y letras</h4><p>La IA no sabe escribir: carteles, etiquetas y libros muestran letras inventadas o palabras sin sentido. Acércate y trata de leer.</p></div>
+          <div class="tipcard"><h4>💡 Luz, sombras y reflejos</h4><p>Busca sombras que apuntan a distintas direcciones, reflejos en espejos o agua que no coinciden con la escena, y brillos sin fuente.</p></div>
+          <div class="tipcard"><h4>🌫️ Fondos y multitudes</h4><p>Al fondo, las caras se derriten, la gente repite poses, y los objetos lejanos se mezclan. La IA descuida lo que está fuera de foco.</p></div>
+          <div class="tipcard"><h4>🧴 Texturas y piel</h4><p>Piel de cera sin poros, todo "demasiado liso y perfecto". Las fotos reales tienen ruido, polvo, arrugas y pequeñas imperfecciones.</p></div>
+          <div class="tipcard"><h4>⚖️ Simetría y accesorios</h4><p>Aretes, gafas, botones o patrones que no coinciden entre lados. Las gafas suelen deformarse o fundirse con la cara.</p></div>
+          <div class="tipcard"><h4>🔁 Patrones repetidos</h4><p>Ladrillos, hojas, ventanas o personas que se repiten de forma idéntica, como copiar y pegar. La realidad casi nunca es tan regular.</p></div>
+        </div>
+        <div class="callout">💡 Truco extra: aleja la vista para la impresión general ("se ve demasiado perfecto") y luego acércate al 200% en zonas críticas: manos, ojos, texto y bordes entre objetos.</div>
+      </div>
+
+      <div id="tabVidBody" class="hide">
+        <div class="tipgrid">
+          <div class="tipcard"><h4>😶 Parpadeo y mirada</h4><p>Los rostros generados parpadean poco o de forma rara, y la mirada puede quedar fija o desincronizada con la cabeza.</p></div>
+          <div class="tipcard"><h4>👄 Sincronía labial</h4><p>La boca no encaja del todo con el sonido. Fíjate en consonantes (p, b, m): los labios no siempre cierran cuando deberían.</p></div>
+          <div class="tipcard"><h4>✋ Manos en movimiento</h4><p>Igual que en fotos, pero peor: dedos que aparecen y desaparecen o que cambian de número entre fotogramas.</p></div>
+          <div class="tipcard"><h4>〰️ Bordes que tiemblan</h4><p>El contorno de personas y objetos "hierve" o se ondula. El pelo, los dedos y los lentes suelen morphear de un cuadro a otro.</p></div>
+          <div class="tipcard"><h4>⏱️ Coherencia temporal</h4><p>Objetos que cambian de tamaño, color o posición sin razón; ropa o fondos que se transforman al pasar algo por delante.</p></div>
+          <div class="tipcard"><h4>🍎 Física y gravedad</h4><p>Pasos que resbalan, líquidos que se mueven raro, objetos que flotan o sombras que no siguen al cuerpo.</p></div>
+          <div class="tipcard"><h4>🔊 Audio y voz</h4><p>Voces demasiado planas, sin respiración ni ruido de ambiente, o entonación que no encaja con la emoción del rostro.</p></div>
+          <div class="tipcard"><h4>🏷️ Pistas técnicas</h4><p>Marcas de agua de generadores (Sora, Veo), clips muy cortos (3–10 s), resolución uniforme y ausencia de metadatos de cámara.</p></div>
+        </div>
+        <div class="callout">💡 Truco extra: reproduce el video a baja velocidad o cuadro a cuadro. La mayoría de los fallos de IA aparecen en las transiciones, justo cuando algo entra o sale de cuadro.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WRONG ANSWER MODAL -->
+<div id="overlayWrong" class="overlay hide">
+  <div class="modal modal-wrong" role="dialog" aria-modal="true" aria-label="Respuesta incorrecta">
+    <button class="x" id="btnCloseWrong" aria-label="Cerrar">✕</button>
+    <img src="{{ url_for('static', filename='img/incorrecto.jpg') }}" alt="Respuesta incorrecta" class="wrong-img">
+    <div class="wrong-caption">❌ ¡Respuesta incorrecta!</div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/audio-manager.js') }}"></script>
+<script src="{{ url_for('static', filename='js/game.js', v='single-correct-answer-1') }}"></script>
+<script src="{{ url_for('static', filename='js/launcher.js', v='profile-stats-1') }}"></script>
+<script src="{{ url_for('static', filename='js/profile-photo.js', v='profile-photo-3') }}"></script>
+{% endblock %}

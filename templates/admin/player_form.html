@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Admin — {{ 'Editar' if player else 'Nuevo' }} jugador{% endblock %}
+{% block content %}
+<main class="wrap">
+  <div class="brand">
+    <div class="logo"><span class="dot"></span> {{ 'Editar jugador' if player else 'Nuevo jugador' }}</div>
+    <div class="hud">
+      <span class="admin-identity">{{ admin_user.full_name }}</span>
+      <a class="btn ghost small" href="{{ url_for('admin.players_list') }}">Volver a jugadores</a>
+      <form method="post" action="{{ url_for('admin.logout') }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <button class="btn ghost small" type="submit">Cerrar sesión</button>
+      </form>
+    </div>
+  </div>
+  <section class="panel admin-panel">
+    <form class="admin-form" method="post">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <label for="playerName">Nombre del jugador
+        <input id="playerName" type="text" name="name" value="{{ entered_name }}"
+               minlength="1" maxlength="30" pattern="[A-Za-z0-9]+(?: +[A-Za-z0-9]+)*" required autocomplete="off"
+               aria-describedby="playerNameHelp">
+      </label>
+      <small id="playerNameHelp">De 1 a 30 letras o números; se permiten espacios entre palabras.</small>
+      <div class="cta-row admin-cta">
+        <button class="btn" type="submit">Guardar</button>
+        <a class="btn ghost" href="{{ url_for('admin.players_list') }}">Cancelar</a>
+      </div>
+    </form>
+  </section>
+</main>
+{% endblock %}

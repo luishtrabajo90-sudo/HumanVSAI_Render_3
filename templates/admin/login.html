@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Acceso administrativo{% endblock %}
+{% block content %}
+<main class="wrap admin-login">
+  <div class="brand">
+    <div class="logo"><span class="dot"></span> Acceso administrativo</div>
+    <a class="btn ghost small" href="{{ url_for('game.index') }}">Volver al juego</a>
+  </div>
+  <section class="panel admin-panel">
+    <p class="admin-help">El acceso de visitantes continúa desde el juego sin contraseña.</p>
+    {% if error %}<div class="flash error" role="alert">{{ error }}</div>{% endif %}
+    <form class="admin-form" method="post" autocomplete="on">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <label for="adminUsername">Usuario
+        <input id="adminUsername" type="text" name="username" required maxlength="40"
+               autocomplete="username" autocapitalize="none" spellcheck="false">
+      </label>
+      <label for="adminPassword">Contraseña
+        <input id="adminPassword" type="password" name="password" required
+               autocomplete="current-password">
+      </label>
+      <div class="cta-row admin-cta">
+        <button class="btn" type="submit">Ingresar</button>
+      </div>
+      <p class="admin-help"><a href="{{ url_for('admin.forgot_password') }}">¿Olvidaste tu contraseña?</a></p>
+    </form>
+  </section>
+</main>
+{% endblock %}

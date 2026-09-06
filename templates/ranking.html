@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}Ranking | AI Fest{% endblock %}
+{% block body_class %}public-ranking-page{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{ url_for('static', filename='css/launcher.css', v='ranking-fullscreen-3') }}"><link rel="stylesheet" href="{{ url_for('static', filename='css/ranking.css', v='2') }}">{% endblock %}
+{% block content %}
+<main id="visitorRankingModal"><section class="visitor-ranking-card"><header class="visitor-ranking-brand"><strong>HUMAN VS AI</strong><img src="{{ url_for('static', filename='img/ui/festival-brand-transparent.png') }}" alt="AI Fest Chevron Venezuela"><span><b>05</b><small>ENTRETENIMIENTO</small></span></header><div class="visitor-ranking-heading"><h1>RANKING</h1></div><div class="visitor-ranking-table-wrap"><table class="visitor-ranking-table"><thead><tr><th>POS.</th><th>NOMBRE</th><th>PUNTOS</th></tr></thead><tbody id="publicRankingList" aria-live="polite"></tbody></table></div><footer class="visitor-ranking-footer"><span>PARTICIPANTES ACTIVOS: <b id="publicActiveCount">0</b></span></footer><div class="public-ranking-actions"><button class="public-ranking-next" id="btnBackToGame" type="button">Volver al juego</button><button class="public-ranking-next" id="btnNextRanking" type="button">Siguiente</button></div></section></main>
+{% endblock %}
+{% block scripts %}<script defer src="{{ url_for('static', filename='js/public-ranking.js', v='2') }}"></script>{% endblock %}

@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block title %}Admin — Pares de imágenes{% endblock %}
+{% block content %}
+<div class="wrap">
+  <div class="brand">
+    <div class="logo"><span class="dot"></span> Admin · Pares de imágenes</div>
+    <div class="hud">
+      <span class="admin-identity">{{ admin_user.full_name }}</span>
+      <a class="btn ghost small" href="{{ url_for('game.index', modo='movil') }}">◀ Volver al juego</a>
+      <a class="btn ghost small" href="{{ url_for('admin.settings_view') }}">⚙️ Configuración</a>
+      <a class="btn ghost small" href="{{ url_for('admin.players_list') }}">Jugadores</a>
+      <a class="btn ghost small" href="{{ url_for('admin.change_password') }}">Cambiar contraseña</a>
+      <a class="btn ghost small" href="{{ url_for('admin.reset_admin_password') }}">Restablecer admins</a>
+      <a class="btn small" href="{{ url_for('admin.pair_new') }}">+ Nuevo par</a>
+      <form method="post" action="{{ url_for('admin.logout') }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <button class="btn ghost small" type="submit">Cerrar sesión</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="panel admin-table-wrap admin-panel">
+    <p class="admin-help">
+      Un par solo aparece en el juego si está <b>activo</b> y tiene
+      <b>ambas</b> imágenes cargadas. Cada una puede clasificarse como IA o REAL.
+      Las explicaciones educativas se generan dinámicamente para cada fotografía.
+    </p>
+    <table class="admin-table">
+      <thead>
+        <tr>
+          <th>ID</th><th>Imagen A</th><th>Imagen B</th><th>Categoría</th><th>Estado</th><th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for pair in pairs %}
+        <tr>
+          <td data-label="ID">{{ pair.id }}</td>
+          <td data-label="Imagen A">{% if pair.ai_image_path %}<img src="{{ url_for('static', filename=pair.ai_image_path) }}" alt="Imagen A"><br><span class="badge-pill {{ 'off' if pair.image_classes[0] == 'IA' else 'on' }}">{{ pair.image_classes[0] }}</span>{% else %}—{% endif %}</td>
+          <td data-label="Imagen B">{% if pair.real_image_path %}<img src="{{ url_for('static', filename=pair.real_image_path) }}" alt="Imagen B"><br><span class="badge-pill {{ 'off' if pair.image_classes[1] == 'IA' else 'on' }}">{{ pair.image_classes[1] }}</span>{% else %}—{% endif %}</td>
+          <td data-label="Categoría">{{ pair.category }}</td>
+          <td data-label="Estado">
+            {% if pair.is_playable %}
+              <span class="badge-pill on">Jugable</span>
+            {% elif pair.active %}
+              <span class="badge-pill off">Activo, incompleto</span>
+            {% else %}
+              <span class="badge-pill off">Inactivo</span>
+            {% endif %}
+          </td>
+          <td class="admin-actions" data-label="Acciones">
+            <a class="btn ghost small" href="{{ url_for('admin.pair_edit', pair_id=pair.id) }}">Editar</a>
+            <form method="post" action="{{ url_for('admin.pair_delete', pair_id=pair.id) }}"
+                  onsubmit="return confirm('¿Eliminar este par y sus imágenes?');">
+              <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+              <button class="btn ghost small" type="submit">Eliminar</button>
+            </form>
+          </td>
+        </tr>
+        {% else %}
+        <tr><td colspan="6" class="admin-empty">No hay pares todavía. Crea uno o ejecuta el script de migración/importación.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
