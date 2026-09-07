@@ -19,7 +19,7 @@ LEVELS = (
 )
 
 
-def _player_id():
+def current_player_id():
     player_id = session.get("player_id")
     if not player_id:
         player_id = str(uuid.uuid4())
@@ -30,7 +30,7 @@ def _player_id():
 def get_profile():
     if current_admin() is not None:
         raise RuntimeError("Las cuentas administrativas no tienen perfil de jugador.")
-    player_id = _player_id()
+    player_id = current_player_id()
     profile = db.session.get(PlayerProfile, player_id)
     if profile is None:
         admin = current_admin()

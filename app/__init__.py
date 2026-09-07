@@ -18,6 +18,7 @@ def create_app(config_class=Config):
     from .game import game_bp
     from .gamification import gamification_bp
     from .admin import admin_bp
+    from .image_library import sync_game_images_from_folders
     from .profile_photo import delete_profile_photo, profile_photo_bp
     from .visitor_session import (
         enforce_visitor_session,
@@ -39,6 +40,8 @@ def create_app(config_class=Config):
         models.ensure_schema()
         models.Settings.get()  # asegura que exista la fila de configuración
         bootstrap_admins(app.config.get("ADMIN_BOOTSTRAP_PASSWORD"))
+        if not app.testing:
+            sync_game_images_from_folders(app)
         for filename in purge_admin_game_data():
             delete_profile_photo(filename)
         purge_expired_guests()

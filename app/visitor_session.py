@@ -105,7 +105,7 @@ def _settle_visitor(visitor, now, reason):
 
 
 def purge_expired_guests(now=None):
-    from .models import MissionResult
+    from .models import MissionResult, PlayerSeenImage
     from .profile_photo import delete_profile_photo
 
     now = now or _utcnow()
@@ -121,6 +121,7 @@ def purge_expired_guests(now=None):
             continue
         VisitorSession.query.filter_by(player_id=player.id).delete(synchronize_session=False)
         MissionResult.query.filter_by(player_id=player.id).delete(synchronize_session=False)
+        PlayerSeenImage.query.filter_by(player_id=player.id).delete(synchronize_session=False)
         if player.photo_filename:
             photos.append(player.photo_filename)
         db.session.delete(player)
@@ -513,6 +514,10 @@ def api_clear_visitor_ranking():
     if removable_ids:
         deleted_results = MissionResult.query.filter(
             MissionResult.player_id.in_(removable_ids)
+        ).delete(synchronize_session=False)
+        from .models import PlayerSeenImage
+        PlayerSeenImage.query.filter(
+            PlayerSeenImage.player_id.in_(removable_ids)
         ).delete(synchronize_session=False)
         VisitorSession.query.filter(
             VisitorSession.player_id.in_(removable_ids)

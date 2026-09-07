@@ -219,6 +219,23 @@ class AdminSecurityTests(unittest.TestCase):
             self.assertEqual(response.status_code, 200)
             self.assertEqual(client.get("/admin/players").status_code, 200)
 
+    def test_admin_can_close_an_active_visitor_session(self):
+        admin = self.app.test_client()
+        self.login(admin, username="cmoron")
+        visitor = self.app.test_client()
+        visitor.post("/api/visitor-session", json={"name": "SesionActiva"})
+        player = PlayerProfile.query.filter_by(name="SesionActiva").one()
+
+        response = admin.post(
+            f"/admin/players/{player.id}/end-session",
+            data={"csrf_token": self.csrf(admin)},
+        )
+        self.assertEqual(response.status_code, 302)
+        record = VisitorSession.query.filter_by(player_id=player.id).one()
+        self.assertEqual(record.end_reason, "admin")
+        self.assertIsNone(record.session_token)
+        self.assertEqual(visitor.get("/api/profile").status_code, 401)
+
     def test_admin_can_play_without_persisting_score_or_profile(self):
         pair = ImagePair(
             category="Prueba",

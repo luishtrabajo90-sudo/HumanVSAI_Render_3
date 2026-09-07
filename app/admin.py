@@ -394,12 +394,35 @@ def player_delete(player_id):
     photo_filename = player.photo_filename
     audit("delete", "player", player.id)
     VisitorSession.query.filter_by(player_id=player.id).delete(synchronize_session=False)
-    from .models import MissionResult
+    from .models import MissionResult, PlayerSeenImage
     MissionResult.query.filter_by(player_id=player.id).delete(synchronize_session=False)
+    PlayerSeenImage.query.filter_by(player_id=player.id).delete(synchronize_session=False)
     db.session.delete(player)
     db.session.commit()
     if photo_filename:
         from .profile_photo import delete_profile_photo
         delete_profile_photo(photo_filename)
     flash("Jugador eliminado. El nombre puede registrarse nuevamente.", "success")
+    return redirect(url_for("admin.players_list"))
+
+
+@admin_bp.post("/players/<string:player_id>/end-session")
+@admin_required
+def player_end_session(player_id):
+    if player_id.startswith("admin-"):
+        abort(403)
+    visitor = VisitorSession.query.filter_by(player_id=player_id).first_or_404()
+    now = datetime.now(timezone.utc)
+    if visitor.ended_at is None:
+        visitor.ended_at = now
+        visitor.end_reason = "admin"
+        visitor.session_token = None
+        visitor.current_image_path = None
+        visitor.current_image_url = None
+        visitor.round_expires_at = None
+        audit("end_session", "visitor_session", visitor.id)
+        db.session.commit()
+        flash("Sesión del jugador cerrada.", "success")
+    else:
+        flash("La sesión del jugador ya estaba finalizada.", "info")
     return redirect(url_for("admin.players_list"))

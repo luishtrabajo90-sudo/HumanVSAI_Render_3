@@ -110,6 +110,17 @@ class PlayerProfile(db.Model):
     )
 
 
+class PlayerSeenImage(db.Model):
+    """Tracks which GameImage rows a player has already been shown, so future
+    rounds avoid repeating them until the whole pool has been exhausted."""
+
+    __tablename__ = "player_seen_images"
+
+    player_id = db.Column(db.String(36), db.ForeignKey("player_profiles.id"), primary_key=True)
+    image_id = db.Column(db.Integer, db.ForeignKey("game_images.id"), primary_key=True)
+    seen_at = db.Column(db.DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
+
+
 class VisitorSession(db.Model):
     __tablename__ = "visitor_sessions"
 
