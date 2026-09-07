@@ -187,6 +187,26 @@ class GameFlowTests(unittest.TestCase):
         self.assertTrue(still_unseen.issubset(second_deck))
         self.assertEqual(len(first_deck & second_deck), 3)
 
+    def test_deck_alternates_classes_with_a_three_two_split(self):
+        for index in range(10):
+            self.add_single_image("REAL", f"balance-real-{index}")
+        for index in range(10):
+            self.add_single_image("IA", f"balance-ia-{index}")
+        client = self.app.test_client()
+
+        for _ in range(6):
+            total = client.post("/api/game/start").get_json()["total"]
+            self.assertEqual(total, 5)
+            with client.session_transaction() as game_session:
+                deck = list(game_session["deck"])
+            classes = [
+                db.session.get(GameImage, int(item.split(":", 1)[1])).image_class
+                for item in deck
+            ]
+            counts = {classes.count("REAL"), classes.count("IA")}
+            self.assertEqual(counts, {2, 3})
+            self.assertTrue(all(classes[i] != classes[i + 1] for i in range(len(classes) - 1)))
+
     def test_invalid_and_duplicate_answers_are_rejected(self):
         pair = self.add_pair()
         client = self.app.test_client()

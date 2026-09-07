@@ -149,44 +149,87 @@ def api_exhibition():
     })
 
 
+def _select_by_class(pool_images, count, seen_rows_by_id):
+    if count <= 0 or not pool_images:
+        return []
+    unseen = [image for image in pool_images if image.id not in seen_rows_by_id]
+    random.shuffle(unseen)
+    selected = unseen[:count]
+    selected_ids = {image.id for image in selected}
+    needed = count - len(selected)
+    if needed > 0:
+        epoch = datetime.min.replace(tzinfo=timezone.utc)
+        recyclable = sorted(
+            (
+                image for image in pool_images
+                if image.id in seen_rows_by_id and image.id not in selected_ids
+            ),
+            key=lambda image: seen_rows_by_id[image.id].seen_at or epoch,
+        )
+        selected.extend(recyclable[:needed])
+    return selected
+
+
+def _interleave_without_repeats(first_group, second_group):
+    """Alternate two lists so no two consecutive images share a class."""
+    if len(second_group) > len(first_group):
+        first_group, second_group = second_group, first_group
+    result = []
+    second_iter = iter(second_group)
+    for image in first_group:
+        result.append(image)
+        following = next(second_iter, None)
+        if following is not None:
+            result.append(following)
+    return result
+
+
 def _select_unseen_images(playable, player_id):
     pool = list(playable)
-    if not player_id or not pool:
-        random.shuffle(pool)
-        return pool[:ROUNDS_PER_GAME]
+    if not pool:
+        return []
 
-    by_id = {image.id: image for image in pool}
-    seen_rows = {
-        row.image_id: row
-        for row in PlayerSeenImage.query.filter_by(player_id=player_id).all()
-        if row.image_id in by_id
-    }
-    least_recently_shown = sorted(seen_rows.values(), key=lambda row: row.seen_at or datetime.min)
+    seen_rows_by_id = {}
+    if player_id:
+        pool_ids = {image.id for image in pool}
+        seen_rows_by_id = {
+            row.image_id: row
+            for row in PlayerSeenImage.query.filter_by(player_id=player_id).all()
+            if row.image_id in pool_ids
+        }
 
-    unseen = [image for image in pool if image.id not in seen_rows]
-    random.shuffle(unseen)
-    selected = unseen[:ROUNDS_PER_GAME]
-    selected_ids = {image.id for image in selected}
+    real_pool = [image for image in pool if image.image_class == "REAL"]
+    ia_pool = [image for image in pool if image.image_class == "IA"]
 
-    needed = ROUNDS_PER_GAME - len(selected)
-    if needed > 0:
-        for row in least_recently_shown:
-            if needed <= 0:
-                break
-            if row.image_id in selected_ids:
-                continue
-            selected.append(by_id[row.image_id])
-            selected_ids.add(row.image_id)
-            needed -= 1
-
-    now = datetime.now(timezone.utc)
-    for image in selected:
-        row = seen_rows.get(image.id)
-        if row is not None:
-            row.seen_at = now
+    if real_pool and ia_pool:
+        # Balance every game 3/2 between classes, alternating so the same
+        # class never appears twice in a row.
+        if random.random() < 0.5:
+            majority_pool, minority_pool = real_pool, ia_pool
         else:
-            db.session.add(PlayerSeenImage(player_id=player_id, image_id=image.id, seen_at=now))
+            majority_pool, minority_pool = ia_pool, real_pool
+        majority_selected = _select_by_class(majority_pool, 3, seen_rows_by_id)
+        minority_selected = _select_by_class(minority_pool, 2, seen_rows_by_id)
+        selected = _interleave_without_repeats(majority_selected, minority_selected)
+
+        remaining_needed = ROUNDS_PER_GAME - len(selected)
+        if remaining_needed > 0:
+            chosen_ids = {image.id for image in selected}
+            leftovers = [image for image in pool if image.id not in chosen_ids]
+            selected.extend(_select_by_class(leftovers, remaining_needed, seen_rows_by_id))
+    else:
+        selected = _select_by_class(pool, ROUNDS_PER_GAME, seen_rows_by_id)
+
+    if player_id:
+        now = datetime.now(timezone.utc)
+        for image in selected:
+            row = seen_rows_by_id.get(image.id)
+            if row is not None:
+                row.seen_at = now
+            else:
+                db.session.add(PlayerSeenImage(player_id=player_id, image_id=image.id, seen_at=now))
     return selected
+
 
 
 @game_bp.route("/api/game/start", methods=["POST"])

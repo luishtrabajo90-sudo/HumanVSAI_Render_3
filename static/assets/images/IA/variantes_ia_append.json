@@ -1,0 +1,3852 @@
+[
+  {
+    "source_real": "real_001.jpg",
+    "ai_image": "ia_101.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_002.jpg",
+    "ai_image": "ia_102.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_003.jpg",
+    "ai_image": "ia_103.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_004.jpg",
+    "ai_image": "ia_104.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_005.jpg",
+    "ai_image": "ia_105.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_006.jpg",
+    "ai_image": "ia_106.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_007.jpg",
+    "ai_image": "ia_107.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_008.jpg",
+    "ai_image": "ia_108.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_009.jpg",
+    "ai_image": "ia_109.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_010.jpg",
+    "ai_image": "ia_110.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_011.jpg",
+    "ai_image": "ia_111.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_012.jpg",
+    "ai_image": "ia_112.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_013.jpg",
+    "ai_image": "ia_113.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_014.jpg",
+    "ai_image": "ia_114.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_015.jpg",
+    "ai_image": "ia_115.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_016.jpg",
+    "ai_image": "ia_116.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_017.jpg",
+    "ai_image": "ia_117.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_018.jpg",
+    "ai_image": "ia_118.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_019.jpg",
+    "ai_image": "ia_119.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_020.jpg",
+    "ai_image": "ia_120.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_021.jpg",
+    "ai_image": "ia_121.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_022.jpg",
+    "ai_image": "ia_122.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_023.jpg",
+    "ai_image": "ia_123.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_024.jpg",
+    "ai_image": "ia_124.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_025.jpg",
+    "ai_image": "ia_125.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_026.jpg",
+    "ai_image": "ia_126.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_027.jpg",
+    "ai_image": "ia_127.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_028.jpg",
+    "ai_image": "ia_128.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_029.jpg",
+    "ai_image": "ia_129.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_030.jpg",
+    "ai_image": "ia_130.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_031.jpg",
+    "ai_image": "ia_131.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_032.jpg",
+    "ai_image": "ia_132.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_033.jpg",
+    "ai_image": "ia_133.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_034.jpg",
+    "ai_image": "ia_134.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_035.jpg",
+    "ai_image": "ia_135.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_036.jpg",
+    "ai_image": "ia_136.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_037.jpg",
+    "ai_image": "ia_137.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_038.jpg",
+    "ai_image": "ia_138.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_039.jpg",
+    "ai_image": "ia_139.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_040.jpg",
+    "ai_image": "ia_140.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_041.jpg",
+    "ai_image": "ia_141.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_042.jpg",
+    "ai_image": "ia_142.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_043.jpg",
+    "ai_image": "ia_143.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_044.jpg",
+    "ai_image": "ia_144.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_045.jpg",
+    "ai_image": "ia_145.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_046.jpg",
+    "ai_image": "ia_146.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_047.jpg",
+    "ai_image": "ia_147.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_048.jpg",
+    "ai_image": "ia_148.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_049.jpg",
+    "ai_image": "ia_149.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_050.jpg",
+    "ai_image": "ia_150.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_051.jpg",
+    "ai_image": "ia_151.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_052.jpg",
+    "ai_image": "ia_152.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_053.jpg",
+    "ai_image": "ia_153.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_054.jpg",
+    "ai_image": "ia_154.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_055.jpg",
+    "ai_image": "ia_155.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_056.jpg",
+    "ai_image": "ia_156.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_057.jpg",
+    "ai_image": "ia_157.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_058.jpg",
+    "ai_image": "ia_158.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_059.jpg",
+    "ai_image": "ia_159.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_060.jpg",
+    "ai_image": "ia_160.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_061.jpg",
+    "ai_image": "ia_161.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_062.jpg",
+    "ai_image": "ia_162.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_063.jpg",
+    "ai_image": "ia_163.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_064.jpg",
+    "ai_image": "ia_164.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_065.jpg",
+    "ai_image": "ia_165.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_066.jpg",
+    "ai_image": "ia_166.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_067.jpg",
+    "ai_image": "ia_167.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_068.jpg",
+    "ai_image": "ia_168.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_069.jpg",
+    "ai_image": "ia_169.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_070.jpg",
+    "ai_image": "ia_170.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_071.jpg",
+    "ai_image": "ia_171.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_072.jpg",
+    "ai_image": "ia_172.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_073.jpg",
+    "ai_image": "ia_173.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_074.jpg",
+    "ai_image": "ia_174.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_075.jpg",
+    "ai_image": "ia_175.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_076.jpg",
+    "ai_image": "ia_176.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_077.jpg",
+    "ai_image": "ia_177.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_078.jpg",
+    "ai_image": "ia_178.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_079.jpg",
+    "ai_image": "ia_179.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_080.jpg",
+    "ai_image": "ia_180.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_081.jpg",
+    "ai_image": "ia_181.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_082.jpg",
+    "ai_image": "ia_182.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_083.jpg",
+    "ai_image": "ia_183.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_084.jpg",
+    "ai_image": "ia_184.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_085.jpg",
+    "ai_image": "ia_185.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_086.jpg",
+    "ai_image": "ia_186.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_087.jpg",
+    "ai_image": "ia_187.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_088.jpg",
+    "ai_image": "ia_188.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_089.jpg",
+    "ai_image": "ia_189.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_090.jpg",
+    "ai_image": "ia_190.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_091.jpg",
+    "ai_image": "ia_191.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_092.jpg",
+    "ai_image": "ia_192.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_093.jpg",
+    "ai_image": "ia_193.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_094.jpg",
+    "ai_image": "ia_194.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_095.jpg",
+    "ai_image": "ia_195.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_096.jpg",
+    "ai_image": "ia_196.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_097.jpg",
+    "ai_image": "ia_197.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_098.jpg",
+    "ai_image": "ia_198.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_099.jpg",
+    "ai_image": "ia_199.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_100.jpg",
+    "ai_image": "ia_200.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_101.jpg",
+    "ai_image": "ia_201.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_102.jpg",
+    "ai_image": "ia_202.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_103.jpg",
+    "ai_image": "ia_203.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_104.jpg",
+    "ai_image": "ia_204.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_105.jpg",
+    "ai_image": "ia_205.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_106.jpg",
+    "ai_image": "ia_206.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_107.jpg",
+    "ai_image": "ia_207.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_108.jpg",
+    "ai_image": "ia_208.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_109.jpg",
+    "ai_image": "ia_209.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_110.jpg",
+    "ai_image": "ia_210.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_111.jpg",
+    "ai_image": "ia_211.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_112.jpg",
+    "ai_image": "ia_212.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_113.jpg",
+    "ai_image": "ia_213.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_114.jpg",
+    "ai_image": "ia_214.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_115.jpg",
+    "ai_image": "ia_215.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_116.jpg",
+    "ai_image": "ia_216.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_117.jpg",
+    "ai_image": "ia_217.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_118.jpg",
+    "ai_image": "ia_218.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_119.jpg",
+    "ai_image": "ia_219.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_120.jpg",
+    "ai_image": "ia_220.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_121.jpg",
+    "ai_image": "ia_221.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_122.jpg",
+    "ai_image": "ia_222.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_123.jpg",
+    "ai_image": "ia_223.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_124.jpg",
+    "ai_image": "ia_224.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_125.jpg",
+    "ai_image": "ia_225.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_126.jpg",
+    "ai_image": "ia_226.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_127.jpg",
+    "ai_image": "ia_227.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_128.jpg",
+    "ai_image": "ia_228.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_129.jpg",
+    "ai_image": "ia_229.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_130.jpg",
+    "ai_image": "ia_230.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_131.jpg",
+    "ai_image": "ia_231.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_132.jpg",
+    "ai_image": "ia_232.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_133.jpg",
+    "ai_image": "ia_233.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_134.jpg",
+    "ai_image": "ia_234.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_135.jpg",
+    "ai_image": "ia_235.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_136.jpg",
+    "ai_image": "ia_236.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_137.jpg",
+    "ai_image": "ia_237.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_138.jpg",
+    "ai_image": "ia_238.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_139.jpg",
+    "ai_image": "ia_239.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_140.jpg",
+    "ai_image": "ia_240.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_141.jpg",
+    "ai_image": "ia_241.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_142.jpg",
+    "ai_image": "ia_242.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_143.jpg",
+    "ai_image": "ia_243.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_144.jpg",
+    "ai_image": "ia_244.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_145.jpg",
+    "ai_image": "ia_245.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_146.jpg",
+    "ai_image": "ia_246.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_147.jpg",
+    "ai_image": "ia_247.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_148.jpg",
+    "ai_image": "ia_248.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_149.jpg",
+    "ai_image": "ia_249.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_150.jpg",
+    "ai_image": "ia_250.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_151.jpg",
+    "ai_image": "ia_251.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_152.jpg",
+    "ai_image": "ia_252.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_153.jpg",
+    "ai_image": "ia_253.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_154.jpg",
+    "ai_image": "ia_254.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_155.jpg",
+    "ai_image": "ia_255.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_156.jpg",
+    "ai_image": "ia_256.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_157.jpg",
+    "ai_image": "ia_257.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_158.jpg",
+    "ai_image": "ia_258.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_159.jpg",
+    "ai_image": "ia_259.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_160.jpg",
+    "ai_image": "ia_260.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_161.jpg",
+    "ai_image": "ia_261.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_162.jpg",
+    "ai_image": "ia_262.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_163.jpg",
+    "ai_image": "ia_263.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_164.jpg",
+    "ai_image": "ia_264.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_165.jpg",
+    "ai_image": "ia_265.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_166.jpg",
+    "ai_image": "ia_266.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_167.jpg",
+    "ai_image": "ia_267.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_168.jpg",
+    "ai_image": "ia_268.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_169.jpg",
+    "ai_image": "ia_269.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_170.jpg",
+    "ai_image": "ia_270.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_171.jpg",
+    "ai_image": "ia_271.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_172.jpg",
+    "ai_image": "ia_272.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_173.jpg",
+    "ai_image": "ia_273.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_174.jpg",
+    "ai_image": "ia_274.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_175.jpg",
+    "ai_image": "ia_275.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_176.jpg",
+    "ai_image": "ia_276.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_177.jpg",
+    "ai_image": "ia_277.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_178.jpg",
+    "ai_image": "ia_278.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_179.jpg",
+    "ai_image": "ia_279.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_180.jpg",
+    "ai_image": "ia_280.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_181.jpg",
+    "ai_image": "ia_281.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_182.jpg",
+    "ai_image": "ia_282.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_183.jpg",
+    "ai_image": "ia_283.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_184.jpg",
+    "ai_image": "ia_284.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_185.jpg",
+    "ai_image": "ia_285.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_186.jpg",
+    "ai_image": "ia_286.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_187.jpg",
+    "ai_image": "ia_287.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_188.jpg",
+    "ai_image": "ia_288.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_189.jpg",
+    "ai_image": "ia_289.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_190.jpg",
+    "ai_image": "ia_290.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_191.jpg",
+    "ai_image": "ia_291.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_192.jpg",
+    "ai_image": "ia_292.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_193.jpg",
+    "ai_image": "ia_293.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_194.jpg",
+    "ai_image": "ia_294.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_195.jpg",
+    "ai_image": "ia_295.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_196.jpg",
+    "ai_image": "ia_296.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_197.jpg",
+    "ai_image": "ia_297.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_198.jpg",
+    "ai_image": "ia_298.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_199.jpg",
+    "ai_image": "ia_299.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_200.jpg",
+    "ai_image": "ia_300.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_201.jpg",
+    "ai_image": "ia_301.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_202.jpg",
+    "ai_image": "ia_302.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_203.jpg",
+    "ai_image": "ia_303.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_204.jpg",
+    "ai_image": "ia_304.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_205.jpg",
+    "ai_image": "ia_305.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_206.jpg",
+    "ai_image": "ia_306.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_207.jpg",
+    "ai_image": "ia_307.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_208.jpg",
+    "ai_image": "ia_308.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_209.jpg",
+    "ai_image": "ia_309.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_210.jpg",
+    "ai_image": "ia_310.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_211.jpg",
+    "ai_image": "ia_311.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_212.jpg",
+    "ai_image": "ia_312.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_213.jpg",
+    "ai_image": "ia_313.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_214.jpg",
+    "ai_image": "ia_314.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_215.jpg",
+    "ai_image": "ia_315.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_216.jpg",
+    "ai_image": "ia_316.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_217.jpg",
+    "ai_image": "ia_317.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_218.jpg",
+    "ai_image": "ia_318.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_219.jpg",
+    "ai_image": "ia_319.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_220.jpg",
+    "ai_image": "ia_320.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_221.jpg",
+    "ai_image": "ia_321.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_222.jpg",
+    "ai_image": "ia_322.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_223.jpg",
+    "ai_image": "ia_323.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_224.jpg",
+    "ai_image": "ia_324.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_225.jpg",
+    "ai_image": "ia_325.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_226.jpg",
+    "ai_image": "ia_326.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_227.jpg",
+    "ai_image": "ia_327.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_228.jpg",
+    "ai_image": "ia_328.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_229.jpg",
+    "ai_image": "ia_329.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_230.jpg",
+    "ai_image": "ia_330.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_231.jpg",
+    "ai_image": "ia_331.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_232.jpg",
+    "ai_image": "ia_332.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_233.jpg",
+    "ai_image": "ia_333.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_234.jpg",
+    "ai_image": "ia_334.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_235.jpg",
+    "ai_image": "ia_335.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_236.jpg",
+    "ai_image": "ia_336.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_237.jpg",
+    "ai_image": "ia_337.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_238.jpg",
+    "ai_image": "ia_338.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_239.jpg",
+    "ai_image": "ia_339.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_240.jpg",
+    "ai_image": "ia_340.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_241.jpg",
+    "ai_image": "ia_341.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_242.jpg",
+    "ai_image": "ia_342.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_243.jpg",
+    "ai_image": "ia_343.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_244.jpg",
+    "ai_image": "ia_344.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_245.jpg",
+    "ai_image": "ia_345.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_246.jpg",
+    "ai_image": "ia_346.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_247.jpg",
+    "ai_image": "ia_347.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_248.jpg",
+    "ai_image": "ia_348.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_249.jpg",
+    "ai_image": "ia_349.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_250.jpg",
+    "ai_image": "ia_350.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_251.jpg",
+    "ai_image": "ia_351.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_252.jpg",
+    "ai_image": "ia_352.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_253.jpg",
+    "ai_image": "ia_353.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_254.jpg",
+    "ai_image": "ia_354.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_255.jpg",
+    "ai_image": "ia_355.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_256.jpg",
+    "ai_image": "ia_356.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_257.jpg",
+    "ai_image": "ia_357.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_258.jpg",
+    "ai_image": "ia_358.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_259.jpg",
+    "ai_image": "ia_359.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_260.jpg",
+    "ai_image": "ia_360.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_261.jpg",
+    "ai_image": "ia_361.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_262.jpg",
+    "ai_image": "ia_362.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_263.jpg",
+    "ai_image": "ia_363.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_264.jpg",
+    "ai_image": "ia_364.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_265.jpg",
+    "ai_image": "ia_365.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_266.jpg",
+    "ai_image": "ia_366.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_267.jpg",
+    "ai_image": "ia_367.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_268.jpg",
+    "ai_image": "ia_368.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_269.jpg",
+    "ai_image": "ia_369.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_270.jpg",
+    "ai_image": "ia_370.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_271.jpg",
+    "ai_image": "ia_371.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_272.jpg",
+    "ai_image": "ia_372.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_273.jpg",
+    "ai_image": "ia_373.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_274.jpg",
+    "ai_image": "ia_374.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_275.jpg",
+    "ai_image": "ia_375.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_276.jpg",
+    "ai_image": "ia_376.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_277.jpg",
+    "ai_image": "ia_377.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_278.jpg",
+    "ai_image": "ia_378.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_279.jpg",
+    "ai_image": "ia_379.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_280.jpg",
+    "ai_image": "ia_380.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_281.jpg",
+    "ai_image": "ia_381.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_282.jpg",
+    "ai_image": "ia_382.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_283.jpg",
+    "ai_image": "ia_383.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_284.jpg",
+    "ai_image": "ia_384.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_285.jpg",
+    "ai_image": "ia_385.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_286.jpg",
+    "ai_image": "ia_386.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_287.jpg",
+    "ai_image": "ia_387.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_288.jpg",
+    "ai_image": "ia_388.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_289.jpg",
+    "ai_image": "ia_389.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_290.jpg",
+    "ai_image": "ia_390.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_291.jpg",
+    "ai_image": "ia_391.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_292.jpg",
+    "ai_image": "ia_392.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_293.jpg",
+    "ai_image": "ia_393.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_294.jpg",
+    "ai_image": "ia_394.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_295.jpg",
+    "ai_image": "ia_395.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_296.jpg",
+    "ai_image": "ia_396.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_297.jpg",
+    "ai_image": "ia_397.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_298.jpg",
+    "ai_image": "ia_398.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_299.jpg",
+    "ai_image": "ia_399.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_300.jpg",
+    "ai_image": "ia_400.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_301.jpg",
+    "ai_image": "ia_401.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_302.jpg",
+    "ai_image": "ia_402.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_303.jpg",
+    "ai_image": "ia_403.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_304.jpg",
+    "ai_image": "ia_404.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_305.jpg",
+    "ai_image": "ia_405.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_306.jpg",
+    "ai_image": "ia_406.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_307.jpg",
+    "ai_image": "ia_407.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_308.jpg",
+    "ai_image": "ia_408.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_309.jpg",
+    "ai_image": "ia_409.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_310.jpg",
+    "ai_image": "ia_410.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_311.jpg",
+    "ai_image": "ia_411.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_312.jpg",
+    "ai_image": "ia_412.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_313.jpg",
+    "ai_image": "ia_413.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_314.jpg",
+    "ai_image": "ia_414.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_315.jpg",
+    "ai_image": "ia_415.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_316.jpg",
+    "ai_image": "ia_416.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_317.jpg",
+    "ai_image": "ia_417.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_318.jpg",
+    "ai_image": "ia_418.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_319.jpg",
+    "ai_image": "ia_419.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_320.jpg",
+    "ai_image": "ia_420.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_321.jpg",
+    "ai_image": "ia_421.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_322.jpg",
+    "ai_image": "ia_422.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_323.jpg",
+    "ai_image": "ia_423.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_324.jpg",
+    "ai_image": "ia_424.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_325.jpg",
+    "ai_image": "ia_425.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_326.jpg",
+    "ai_image": "ia_426.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_327.jpg",
+    "ai_image": "ia_427.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_328.jpg",
+    "ai_image": "ia_428.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_329.jpg",
+    "ai_image": "ia_429.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_330.jpg",
+    "ai_image": "ia_430.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_331.jpg",
+    "ai_image": "ia_431.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_332.jpg",
+    "ai_image": "ia_432.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_333.jpg",
+    "ai_image": "ia_433.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_334.jpg",
+    "ai_image": "ia_434.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_335.jpg",
+    "ai_image": "ia_435.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_336.jpg",
+    "ai_image": "ia_436.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_337.jpg",
+    "ai_image": "ia_437.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_338.jpg",
+    "ai_image": "ia_438.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_339.jpg",
+    "ai_image": "ia_439.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_340.jpg",
+    "ai_image": "ia_440.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_341.jpg",
+    "ai_image": "ia_441.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_342.jpg",
+    "ai_image": "ia_442.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_343.jpg",
+    "ai_image": "ia_443.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_344.jpg",
+    "ai_image": "ia_444.jpg",
+    "artifacts": [
+      "Sombra suave sin una fuente de luz coherente",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_345.jpg",
+    "ai_image": "ia_445.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_346.jpg",
+    "ai_image": "ia_446.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Borde local estirado o deformado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_347.jpg",
+    "ai_image": "ia_447.jpg",
+    "artifacts": [
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Patrón del fondo repetido de forma artificial",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_348.jpg",
+    "ai_image": "ia_448.jpg",
+    "artifacts": [
+      "Borde local estirado o deformado",
+      "Objeto o elemento del fondo duplicado",
+      "Perspectiva local ligeramente incompatible",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_349.jpg",
+    "ai_image": "ia_449.jpg",
+    "artifacts": [
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Objeto o elemento del fondo duplicado",
+      "Sombra suave sin una fuente de luz coherente",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  },
+  {
+    "source_real": "real_350.jpg",
+    "ai_image": "ia_450.jpg",
+    "artifacts": [
+      "Objeto o elemento del fondo duplicado",
+      "Patrón del fondo repetido de forma artificial",
+      "Perspectiva local ligeramente incompatible",
+      "Borde local estirado o deformado",
+      "Reflejo o textura local apenas desalineado"
+    ]
+  }
+]
