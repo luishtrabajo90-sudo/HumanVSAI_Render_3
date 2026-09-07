@@ -39,6 +39,13 @@
           <td data-label="Misiones">{{ player.mission_count }}</td>
           <td class="admin-actions" data-label="Acciones">
             <a class="btn ghost small" href="{{ url_for('admin.player_edit', player_id=player.id) }}">Editar</a>
+            {% if visitor and not visitor.ended_at and visitor.expires_at > now %}
+            <form method="post" action="{{ url_for('admin.player_end_session', player_id=player.id) }}"
+                  onsubmit="return confirm('¿Cerrar la sesión activa de {{ player.name }}?');">
+              <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+              <button class="btn ghost small" type="submit">Cerrar sesión</button>
+            </form>
+            {% endif %}
             <form method="post" action="{{ url_for('admin.player_delete', player_id=player.id) }}"
                   onsubmit="return confirm('¿Eliminar este jugador y todo su historial?');">
               <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">

@@ -6,7 +6,7 @@ from app import create_app
 from app.extensions import db
 from app.game import load_ai_fest_questions
 from app.gamification import record_result
-from app.models import GameImage, ImagePair, PlayerProfile
+from app.models import GameImage, ImagePair, PlayerProfile, PlayerSeenImage
 
 
 class TestConfig:
@@ -165,6 +165,27 @@ class GameFlowTests(unittest.TestCase):
             self.assertTrue(record_result("best-score-1", "human-vs-ai", "", 700, 20, True)[1])
             self.assertTrue(record_result("best-score-2", "human-vs-ai", "", 350, 20, True)[1])
         self.assertEqual(db.session.get(PlayerProfile, "best-score-player").total_points, 700)
+
+    def test_started_games_prioritize_unseen_images_before_repeating(self):
+        images = [self.add_single_image("IA" if i % 2 else "REAL", f"no-repeat-{i}") for i in range(7)]
+        all_ids = {f"image:{image.id}" for image in images}
+        client = self.app.test_client()
+
+        first_round = client.post("/api/game/start").get_json()
+        self.assertEqual(first_round["total"], 5)
+        with client.session_transaction() as game_session:
+            first_deck = set(game_session["deck"])
+            player_id = game_session["player_id"]
+        self.assertEqual(PlayerSeenImage.query.filter_by(player_id=player_id).count(), 5)
+        still_unseen = all_ids - first_deck
+        self.assertEqual(len(still_unseen), 2)
+
+        second_round = client.post("/api/game/start").get_json()
+        self.assertEqual(second_round["total"], 5)
+        with client.session_transaction() as game_session:
+            second_deck = set(game_session["deck"])
+        self.assertTrue(still_unseen.issubset(second_deck))
+        self.assertEqual(len(first_deck & second_deck), 3)
 
     def test_invalid_and_duplicate_answers_are_rejected(self):
         pair = self.add_pair()

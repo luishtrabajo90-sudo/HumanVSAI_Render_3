@@ -11,7 +11,7 @@ from flask import Blueprint, current_app, jsonify, redirect, render_template, re
 from .extensions import db
 from .image_explanations import build_feedback, detective_tip
 from .game_catalog import get_game_catalog
-from .models import GameImage, ImagePair, MissionResult, PlayerProfile, Settings
+from .models import GameImage, ImagePair, MissionResult, PlayerProfile, PlayerSeenImage, Settings
 
 game_bp = Blueprint("game", __name__)
 
@@ -149,15 +149,59 @@ def api_exhibition():
     })
 
 
+def _select_unseen_images(playable, player_id):
+    pool = list(playable)
+    if not player_id or not pool:
+        random.shuffle(pool)
+        return pool[:ROUNDS_PER_GAME]
+
+    by_id = {image.id: image for image in pool}
+    seen_rows = {
+        row.image_id: row
+        for row in PlayerSeenImage.query.filter_by(player_id=player_id).all()
+        if row.image_id in by_id
+    }
+    least_recently_shown = sorted(seen_rows.values(), key=lambda row: row.seen_at or datetime.min)
+
+    unseen = [image for image in pool if image.id not in seen_rows]
+    random.shuffle(unseen)
+    selected = unseen[:ROUNDS_PER_GAME]
+    selected_ids = {image.id for image in selected}
+
+    needed = ROUNDS_PER_GAME - len(selected)
+    if needed > 0:
+        for row in least_recently_shown:
+            if needed <= 0:
+                break
+            if row.image_id in selected_ids:
+                continue
+            selected.append(by_id[row.image_id])
+            selected_ids.add(row.image_id)
+            needed -= 1
+
+    now = datetime.now(timezone.utc)
+    for image in selected:
+        row = seen_rows.get(image.id)
+        if row is not None:
+            row.seen_at = now
+        else:
+            db.session.add(PlayerSeenImage(player_id=player_id, image_id=image.id, seen_at=now))
+    return selected
+
+
 @game_bp.route("/api/game/start", methods=["POST"])
 def api_start():
+    from .admin_auth import current_admin
+    from .gamification import current_player_id
+
     images = GameImage.query.filter_by(active=True).all()
     playable = [image for image in images if image.is_playable]
-    deck_ids = [f"image:{image.id}" for image in playable]
     if not playable:
         return jsonify({"error": "No hay imágenes individuales listas para jugar."}), 400
-    random.shuffle(deck_ids)
-    deck_ids = deck_ids[:ROUNDS_PER_GAME]
+    player_id = None if current_admin() is not None else current_player_id()
+    selected = _select_unseen_images(playable, player_id)
+    deck_ids = [f"image:{image.id}" for image in selected]
+    db.session.commit()
     _reset_state(deck_ids)
     _publish_game_state()
     return jsonify({"total": len(deck_ids)})
