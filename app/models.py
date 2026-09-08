@@ -332,14 +332,14 @@ def ensure_schema():
                 ended = ended.replace(tzinfo=timezone.utc)
             visitor.consumed_seconds = max(
                 float(visitor.consumed_seconds or 0.0),
-                min(600.0, max(0.0, (ended - started).total_seconds())),
+                min(24 * 60 * 60.0, max(0.0, (ended - started).total_seconds())),
             )
         elif visitor.expires_at is not None:
             expires = visitor.expires_at
             if expires.tzinfo is None:
                 expires = expires.replace(tzinfo=timezone.utc)
             if expires <= datetime.now(timezone.utc):
-                visitor.consumed_seconds = 600.0
+                visitor.consumed_seconds = 24 * 60 * 60.0
     db.session.commit()
     db.session.execute(
         text(

@@ -14,6 +14,7 @@
   var visitorSyncId = null;
   var expirationCheckPending = false;
   var rankingRefreshId = null;
+  var maxGamesPerPlayer = 2;
   var adminUsernames = JSON.parse(el("adminUsernameData").textContent);
   games.forEach(function (game) { catalog[game.id] = game; });
 
@@ -38,12 +39,13 @@
   function select(id) {
     var game = catalog[id];
     if (!game) return;
+    var playLimitReached = !visitorSession || !visitorSession.admin && profile && profile.missions >= maxGamesPerPlayer;
     selected = id;
     document.querySelectorAll(".game-app").forEach(function (button) {
       button.classList.toggle("selected", button.dataset.gameId === id);
       button.setAttribute("aria-pressed", String(button.dataset.gameId === id));
     });
-    el("gamePreviewAction").textContent = game.action_label;
+    el("gamePreviewAction").textContent = playLimitReached ? "Ver ranking" : game.action_label;
     el("btnLaunchSelected").disabled = game.status !== "available";
   }
 
@@ -54,16 +56,8 @@
   }
 
   function renderSessionClocks(timedSession) {
-    var launcherVisible = !launcher.classList.contains("hide");
-    var startVisible = !el("screenStart").classList.contains("hide");
-    document.querySelector(".launcher-session-clock").classList.toggle(
-      "hide",
-      !(timedSession && launcherVisible)
-    );
-    el("gameSessionClock").classList.toggle(
-      "hide",
-      !(timedSession && !launcherVisible && !startVisible)
-    );
+    document.querySelector(".launcher-session-clock").classList.add("hide");
+    el("gameSessionClock").classList.add("hide");
   }
 
   function renderVisitorSession() {
@@ -155,7 +149,7 @@
   function syncVisitorSession(initial) {
     return requestJson("/api/visitor-session").then(function (data) {
       if (!data.active && visitorSession) {
-        handleSessionEnded(true, "Tu sesión de 10 minutos finalizó.");
+        handleSessionEnded(true, "Tu sesión finalizó.");
       } else {
         setVisitorSession(data);
       }
@@ -199,7 +193,7 @@
   function showSessionExpired(message) {
     hideVisitorLogin(true);
     el("sessionExpiredMessage").textContent = message ||
-      "Han transcurrido los 10 minutos disponibles. Tus resultados quedaron guardados en el ranking.";
+      "Tus resultados quedaron guardados en el ranking.";
     el("sessionExpiredModal").classList.remove("hide");
     el("btnAcknowledgeSessionExpired").focus();
   }
@@ -341,6 +335,9 @@
     }
     profile = data;
     renderProfileStats(data);
+    var playLimitReached = !data.admin && data.missions >= maxGamesPerPlayer;
+    el("btnLaunchSelected").disabled = !catalog[selected] || catalog[selected].status !== "available";
+    el("gamePreviewAction").textContent = playLimitReached ? "Ver ranking" : catalog[selected].action_label;
     el("launcherProfileName").textContent = data.name;
     el("launcherProfileLevel").textContent = data.level;
     el("profileName").value = data.name;
@@ -448,6 +445,10 @@
     var game = catalog[selected];
     if (!visitorSession) {
       showVisitorLogin("Inicia una sesión para jugar.");
+      return;
+    }
+    if (!visitorSession.admin && profile && profile.missions >= maxGamesPerPlayer) {
+      openRanking();
       return;
     }
     if (!game || game.status !== "available") return;

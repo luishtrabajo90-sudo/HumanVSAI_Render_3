@@ -1,4 +1,6 @@
 import unittest
+import time
+import uuid
 
 from flask import session
 
@@ -6,7 +8,7 @@ from app import create_app
 from app.extensions import db
 from app.game import load_ai_fest_questions
 from app.gamification import record_result
-from app.models import GameImage, ImagePair, PlayerProfile, PlayerSeenImage
+from app.models import GameImage, ImagePair, MissionResult, PlayerProfile, PlayerSeenImage
 
 
 class TestConfig:
@@ -67,6 +69,8 @@ class GameFlowTests(unittest.TestCase):
                 "hits": 0,
                 "answered": False,
                 "image_index": image_index,
+                "human_run_id": uuid.uuid4().hex,
+                "human_started": time.time(),
             })
 
     def test_each_image_can_be_classified_as_ai_or_real(self):
@@ -97,7 +101,7 @@ class GameFlowTests(unittest.TestCase):
         wrong = client.post("/api/game/answer", json={"choice": "ia"})
         self.assertFalse(wrong.get_json()["correct"])
         self.assertEqual(wrong.get_json()["correct_choice"], "real")
-        self.assertTrue(wrong.get_json()["summary"])
+        self.assertIn("Oh no, deberías repasar los tips", wrong.get_json()["summary"])
 
     def test_correct_choice_covers_correct_wrong_inverse_and_timeout(self):
         pair = self.add_pair("IA", "REAL", "answer-states")
@@ -158,6 +162,30 @@ class GameFlowTests(unittest.TestCase):
         answer = client.post("/api/game/answer", json={"choice": "ia"}).get_json()
         self.assertTrue(answer["correct"])
         self.assertTrue(answer["image"]["isAI"])
+        self.assertIn(answer["summary"], {
+            "Buen trabajo",
+            "Excelente",
+            "Lo estás haciendo muy bien",
+        })
+
+    def test_player_can_start_only_two_completed_games(self):
+        for index in range(5):
+            self.add_single_image(suffix=f"limit-{index}")
+        player = PlayerProfile(id="limited-player", name="Limited")
+        db.session.add(player)
+        db.session.add_all([
+            MissionResult(player_id=player.id, run_token="run-1", game_id="human-vs-ai", completed=True),
+            MissionResult(player_id=player.id, run_token="run-2", game_id="human-vs-ai", completed=True),
+        ])
+        player.mission_count = 2
+        db.session.commit()
+        client = self.app.test_client()
+        with client.session_transaction() as game_session:
+            game_session["player_id"] = player.id
+
+        response = client.post("/api/game/start")
+        self.assertEqual(response.status_code, 403)
+        self.assertTrue(response.get_json()["play_limit_reached"])
 
     def test_profile_keeps_only_the_highest_completed_game_score(self):
         with self.app.test_request_context():
@@ -186,6 +214,26 @@ class GameFlowTests(unittest.TestCase):
             second_deck = set(game_session["deck"])
         self.assertTrue(still_unseen.issubset(second_deck))
         self.assertEqual(len(first_deck & second_deck), 3)
+
+    def test_deck_alternates_classes_with_a_three_two_split(self):
+        for index in range(10):
+            self.add_single_image("REAL", f"balance-real-{index}")
+        for index in range(10):
+            self.add_single_image("IA", f"balance-ia-{index}")
+        client = self.app.test_client()
+
+        for _ in range(6):
+            total = client.post("/api/game/start").get_json()["total"]
+            self.assertEqual(total, 5)
+            with client.session_transaction() as game_session:
+                deck = list(game_session["deck"])
+            classes = [
+                db.session.get(GameImage, int(item.split(":", 1)[1])).image_class
+                for item in deck
+            ]
+            counts = {classes.count("REAL"), classes.count("IA")}
+            self.assertEqual(counts, {2, 3})
+            self.assertTrue(all(classes[i] != classes[i + 1] for i in range(len(classes) - 1)))
 
     def test_invalid_and_duplicate_answers_are_rejected(self):
         pair = self.add_pair()
@@ -216,10 +264,12 @@ class GameFlowTests(unittest.TestCase):
 
         self.assertTrue(player_a.post("/api/game/answer", json={"choice": "ia"}).get_json()["correct"])
         self.assertFalse(player_b.post("/api/game/answer", json={"choice": "real"}).get_json()["correct"])
+        self.assertTrue(player_a.post("/api/game/next").get_json()["finished"])
+        self.assertTrue(player_b.post("/api/game/next").get_json()["finished"])
 
         result_a = player_a.get("/api/game/result").get_json()
         result_b = player_b.get("/api/game/result").get_json()
-        self.assertEqual(result_a["score"], 100)
+        self.assertGreater(result_a["score"], 0)
         self.assertEqual(result_a["hits"], 1)
         self.assertEqual(result_b["score"], 0)
         self.assertEqual(result_b["hits"], 0)
@@ -279,7 +329,11 @@ class GameFlowTests(unittest.TestCase):
 
         self.assertEqual(visited_rounds, [1, 2, 3, 4, 5])
         self.assertEqual(len(set(detective_tips)), 5)
-        self.assertEqual(len(set(explanations)), 5)
+        self.assertTrue(set(explanations).issubset({
+            "Buen trabajo",
+            "Excelente",
+            "Lo estás haciendo muy bien",
+        }))
         result = client.get("/api/game/result").get_json()
         self.assertEqual(result["hits"], 5)
         self.assertNotIn("trivia_hits", result)

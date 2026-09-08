@@ -25,6 +25,7 @@ var state = {
   answerSubmitting: false,
   resultSubmitting: false,
   resultReceived: false,
+  resultIdleTimerId: null,
 };
 
 /* ---------- Audio ---------- */
@@ -64,7 +65,11 @@ function api(url, method, body) {
   }
   return fetch(url, opts).then(function (r) {
     return r.json().then(function (data) {
-      if (!r.ok) throw new Error(data.error || "Error de red");
+      if (!r.ok) {
+        var error = new Error(data.error || "Error de red");
+        error.data = data;
+        throw error;
+      }
       return data;
     });
   });
@@ -99,6 +104,14 @@ function validateAnswerPayload(answer) {
     throw new Error("La respuesta no incluyó una clasificación válida.");
   }
   return answer;
+}
+
+function updateResultActions(profile) {
+  var limitReached = profile && !profile.admin && profile.missions >= 2;
+  var retryGame = $("btnRetryGame");
+  var newGame = $("btnNewGame");
+  if (retryGame) retryGame.classList.toggle("hide", limitReached);
+  if (newGame) newGame.classList.toggle("hide", limitReached);
 }
 
 /* ---------- Timer ---------- */
@@ -143,6 +156,7 @@ function updateTimerUI() {
 /* ---------- Flujo del juego ---------- */
 function startFlow() {
   window.AudioManager.stopAll();
+  stopResultIdleLogout();
   state.roundLoadToken++;
   state.roundReady = false;
   state.resultSubmitting = false;
@@ -163,6 +177,11 @@ function startFlow() {
     hide($("screenLoading")); show($("screenGame"));
     loadRound();
   }).catch(function (err) {
+    if (err.data && err.data.play_limit_reached && window.GameLauncher) {
+      returnToGames();
+      window.GameLauncher.openRanking();
+      return;
+    }
     $("loadMsg").innerHTML = err.message + "<br><br>";
     var b = document.createElement("button");
     b.className = "btn"; b.textContent = "Volver";
@@ -345,15 +364,12 @@ function reveal(r, chosenChoice) {
   }
 
   $("timeoutAlert").className = "timeout-alert " + (r.correct ? "success" : "failure");
-  $("timeoutAlert").textContent = r.correct
-    ? "✓ ¡Respuesta correcta!"
-    : (chosenChoice === null ? "⏱ ¡Tiempo agotado!" : "✕ Respuesta incorrecta");
+  $("timeoutAlert").textContent = r.summary;
   show($("timeoutAlert"));
 
-  var titleTxt = r.correct ? "✅ ¡Correcto!" : (chosenChoice === null ? "⏱️ ¡Se acabó el tiempo!" : "❌ Respuesta incorrecta");
-  var gainTxt = r.correct ? ("+" + r.gain + " pts" + (r.streak > 1 ? "  🔥 x" + r.streak : "")) : "+0 pts";
-  $("fbTitle").innerHTML = titleTxt + ' <span class="gain">' + gainTxt + "</span>";
+  $("fbTitle").textContent = r.summary;
   $("fbSummary").textContent = r.summary;
+  $("fbSummary").closest("p").classList.add("hide");
   show($("feedback"));
 
   setStat("score", r.score);
@@ -427,10 +443,12 @@ function finish() {
     $("rBest").textContent = r.best_streak;
     $("rRank").textContent = r.rank;
     $("rMsg").textContent = r.message;
+    updateResultActions(r.profile);
     if (window.GameLauncher && window.GameLauncher.refreshProfile) {
       window.GameLauncher.refreshProfile(r.profile);
     }
     show($("screenResult"));
+    startResultIdleLogout();
   }).catch(function (error) {
     state.resultSubmitting = false;
     show($("screenGame"));
@@ -438,9 +456,29 @@ function finish() {
   });
 }
 
+function stopResultIdleLogout() {
+  if (state.resultIdleTimerId) {
+    clearTimeout(state.resultIdleTimerId);
+    state.resultIdleTimerId = null;
+  }
+}
+
+function startResultIdleLogout() {
+  stopResultIdleLogout();
+  if (document.body.classList.contains("admin-session")) return;
+  state.resultIdleTimerId = setTimeout(function () {
+    if (window.GameLauncher) window.GameLauncher.endVisitorSession(false);
+  }, 60000);
+}
+
+function noteResultActivity() {
+  if (!$('screenResult').classList.contains('hide')) startResultIdleLogout();
+}
+
 /* ---------- Inicio / Salir ---------- */
 function goHome() {
   window.AudioManager.stopAll();
+  stopResultIdleLogout();
   state.transitioning = false;
   state.roundLoadToken++;
   state.roundReady = false;
@@ -488,6 +526,7 @@ function closeWrongModal() {
 
 function returnToGames() {
   window.AudioManager.stopAll();
+  stopResultIdleLogout();
   state.roundLoadToken++;
   state.roundReady = false;
   stopTimer();
@@ -507,7 +546,9 @@ function returnToGames() {
 
 /* ---------- Wire up ---------- */
 function startAnotherGame() {
+  stopResultIdleLogout();
   hide($("screenResult"));
+  updateResultActions(null);
   startFlow();
 }
 var retryGameButton = $("btnRetryGame");
@@ -530,12 +571,14 @@ $("btnSkipRound").addEventListener("click", skipRound);
 $("choiceAI").addEventListener("click", function () { choose("ia"); });
 $("choiceReal").addEventListener("click", function () { choose("real"); });
 document.addEventListener("keydown", function (e) {
+  noteResultActivity();
   if ($("screenGame").classList.contains("hide")) return;
   if (!state.answered) {
     if (e.key === "i" || e.key === "I" || e.key === "1") choose("ia");
     if (e.key === "r" || e.key === "R" || e.key === "2") choose("real");
   }
 });
+document.addEventListener("pointerdown", noteResultActivity);
 ["btnLearnTop", "btnLearnStart", "btnLearnEnd"].forEach(function (id) {
   var el = $(id); if (el) el.addEventListener("click", openLearn);
 });

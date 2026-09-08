@@ -31,7 +31,7 @@ from .models import PlayerProfile, VisitorSession
 
 
 visitor_session_bp = Blueprint("visitor_session", __name__)
-SESSION_DURATION_SECONDS = 10 * 60
+SESSION_DURATION_SECONDS = 24 * 60 * 60
 GUEST_RETENTION_HOURS = 24
 VISITOR_HISTORY_ADMINS = frozenset({
     "cmoron",
@@ -232,7 +232,7 @@ def enforce_visitor_session():
     )
     if protected and current_admin() is None and current_visitor_session() is None:
         return jsonify({
-            "error": "La sesión de visitante ha expirado después de 10 minutos.",
+            "error": "La sesión de visitante ha expirado.",
             "session_expired": True,
         }), 401
     return None
@@ -317,7 +317,7 @@ def api_start_visitor_session():
     if remaining <= 0:
         db.session.commit()
         return jsonify({
-            "error": "Este visitante ya utilizó sus 10 minutos disponibles.",
+            "error": "Este visitante ya no tiene una sesión disponible.",
             "session_expired": True,
         }), 403
 

@@ -10,9 +10,9 @@
 
   <header class="brand">
     <div class="brand-actions">
-      <span class="game-session-clock hide" id="gameSessionClock" aria-label="Tiempo restante de sesión">
+      <span class="game-session-clock hide" id="gameSessionClock" aria-label="Sesión de visitante">
         <small id="gameSessionName">Visitante</small>
-        <b id="gameSessionTimer">10:00</b>
+        <b id="gameSessionTimer">--</b>
       </span>
       <button class="btn game-nav game-chrome hide" id="btnLearnTop">
         <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5.5A3.5 3.5 0 0 1 7.5 2H11v18H7.5A3.5 3.5 0 0 0 4 23V5.5ZM20 5.5A3.5 3.5 0 0 0 16.5 2H13v18h3.5A3.5 3.5 0 0 1 20 23V5.5Z"/></svg>
@@ -206,7 +206,7 @@
 
 <div class="launcher-modal visitor-login-modal hide" id="visitorLoginModal" role="dialog" aria-modal="true" aria-labelledby="visitorLoginTitle">
   <form class="launcher-modal-card visitor-login-card" id="visitorLoginForm" method="post" action="{{ url_for('visitor_session.api_start_visitor_session') }}">
-    <span class="visitor-login-kicker">SESIÓN TEMPORAL · 10 MINUTOS</span>
+    <span class="visitor-login-kicker">SESIÓN DE VISITANTE · 2 PARTIDAS</span>
     <h2 id="visitorLoginTitle">¿Cómo quieres aparecer en el juego?</h2>
     <p>Ingresa tu nombre de usuario. Los visitantes participan sin contraseña.</p>
     <div class="visitor-identity-fields">
@@ -267,10 +267,10 @@
 
 <div class="launcher-modal visitor-login-modal hide" id="sessionExpiredModal" role="alertdialog" aria-modal="true" aria-labelledby="sessionExpiredTitle">
   <div class="launcher-modal-card session-expired-card">
-    <span class="session-expired-icon" aria-hidden="true">00:00</span>
+    <span class="session-expired-icon" aria-hidden="true">FIN</span>
     <span class="visitor-login-kicker">SESIÓN FINALIZADA</span>
     <h2 id="sessionExpiredTitle">Tu sesión ha expirado</h2>
-    <p id="sessionExpiredMessage">Han transcurrido los 10 minutos disponibles. Tus resultados quedaron guardados en el ranking.</p>
+    <p id="sessionExpiredMessage">Tus resultados quedaron guardados en el ranking.</p>
     <button class="btn" type="button" id="btnAcknowledgeSessionExpired">Iniciar una nueva sesión</button>
   </div>
 </div>

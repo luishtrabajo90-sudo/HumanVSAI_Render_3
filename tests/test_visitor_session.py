@@ -46,7 +46,7 @@ class VisitorSessionTests(unittest.TestCase):
         data = response.get_json()
         self.assertTrue(data["active"])
         self.assertEqual(data["name"], "Daniela")
-        self.assertEqual(data["seconds_remaining"], 600)
+        self.assertGreaterEqual(data["seconds_remaining"], 24 * 60 * 60 - 1)
 
         visitor = VisitorSession.query.one()
         profile = PlayerProfile.query.one()
@@ -114,27 +114,27 @@ class VisitorSessionTests(unittest.TestCase):
             json={"name": "Tiempo Compartido"},
         )
         self.assertEqual(resumed.status_code, 201)
-        self.assertGreaterEqual(resumed.get_json()["seconds_remaining"], 473)
-        self.assertLessEqual(resumed.get_json()["seconds_remaining"], 476)
+        self.assertGreaterEqual(resumed.get_json()["seconds_remaining"], 24 * 60 * 60 - 127)
+        self.assertLessEqual(resumed.get_json()["seconds_remaining"], 24 * 60 * 60 - 124)
         self.assertEqual(VisitorSession.query.count(), 1)
 
-    def test_visitor_cannot_restart_after_consuming_ten_minutes(self):
+    def test_visitor_can_resume_after_more_than_ten_minutes(self):
         first = self.app.test_client()
         second = self.app.test_client()
-        first.post("/api/visitor-session", json={"name": "Tiempo Agotado"})
+        first.post("/api/visitor-session", json={"name": "Tiempo Disponible"})
         visitor = VisitorSession.query.one()
         visitor.started_at = datetime.now(timezone.utc) - timedelta(seconds=600)
-        visitor.expires_at = datetime.now(timezone.utc)
+        visitor.expires_at = datetime.now(timezone.utc) + timedelta(hours=23, minutes=50)
         db.session.commit()
 
-        exhausted = second.post(
+        resumed = second.post(
             "/api/visitor-session",
-            json={"name": "Tiempo Agotado"},
+            json={"name": "Tiempo Disponible"},
         )
-        self.assertEqual(exhausted.status_code, 403)
-        self.assertTrue(exhausted.get_json()["session_expired"])
+        self.assertEqual(resumed.status_code, 201)
+        self.assertTrue(resumed.get_json()["active"])
         db.session.refresh(visitor)
-        self.assertEqual(visitor.consumed_seconds, 600)
+        self.assertGreaterEqual(visitor.consumed_seconds, 599)
 
     def test_visitor_names_are_case_sensitive(self):
         first = self.app.test_client()
@@ -377,12 +377,9 @@ class VisitorSessionTests(unittest.TestCase):
         self.assertNotIn('id="visitorSessionHud"', html)
         self.assertNotIn('id="btnVisitorLogout"', html)
         self.assertIn('requestJson("/api/visitor-session"', launcher)
-        self.assertIn('el("gameSessionTimer").textContent = value', launcher)
+        self.assertIn('el("gameSessionClock").classList.add("hide")', launcher)
         self.assertIn('var timedSession = active && !visitorSession.admin', launcher)
         self.assertIn("function renderSessionClocks(timedSession)", launcher)
-        self.assertIn("var startVisible = !el(\"screenStart\").classList.contains(\"hide\")", launcher)
-        self.assertIn("!(timedSession && launcherVisible)", launcher)
-        self.assertIn("!(timedSession && !launcherVisible && !startVisible)", launcher)
         self.assertIn("renderSessionClocks(false)", launcher)
         self.assertIn("if (!visitorSession || visitorSession.admin) return", launcher)
         self.assertIn('requestJson("/api/visitor-session/end"', launcher)
